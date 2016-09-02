@@ -403,7 +403,7 @@ textarea {
   left: 13.5px; }
 
 .content {
-  padding-top: 50px; }
+  padding: 50px 0 50px 0; }
   .content h1 {
     background: #7d0000;
     color: #a5ceeb;
@@ -429,6 +429,18 @@ textarea {
       color: white;
       font-size: 30px;
       padding: 5px 20px 5px 20px; }
+
+.footer {
+  background: #7d0000;
+  padding: 10px 0 10px 0px; }
+  .footer .fa {
+    font-size: 40px;
+    color: white;
+    padding-left: 10%; }
+  .footer .fa:hover {
+    color: black; }
+  .footer p {
+    color: white; }
 
 body {
   font-family: 'Open Sans', sans-serif;

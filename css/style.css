@@ -373,19 +373,21 @@ textarea {
       display: inline-block;
       width: 22%;
       text-align: center; }
-      .nav ul li a {
-        font-size: 22px;
-        text-transform: uppercase;
-        padding: 15px 50px 10px 50px;
-        font-weight: bold;
-        color: #a5ceeb;
-        text-decoration: none; }
-      .nav ul li a:hover {
-        color: white;
-        background: black; }
+  .nav a, .nav .mobileN {
+    font-size: 22px;
+    text-transform: uppercase;
+    padding: 15px 50px 10px 50px;
+    font-weight: bold;
+    color: #a5ceeb;
+    text-decoration: none; }
+  .nav a:hover, .nav .mobileN:hover {
+    color: white; }
   .nav img {
     width: 80%;
     padding-top: 10px; }
+  .nav .mobileN {
+    display: none;
+    padding: 0; }
 
 .header img {
   width: 99.9%; }
@@ -462,5 +464,30 @@ body {
     overflow-x: hidden; }
   body h1, body h2 {
     font-family: 'Finger Paint', cursive; }
+
+@media (max-width: 767px) {
+  .nav img {
+    width: 50%;
+    position: relative;
+    left: -50px; }
+  .nav .mobileN {
+    display: inline-block;
+    position: relative;
+    left: -20px;
+    top: 10px;
+    font-size: 30px;
+    cursor: pointer; }
+  .nav .drop {
+    padding: 0;
+    display: none; }
+    .nav .drop li {
+      width: 100%;
+      display: block;
+      text-align: center;
+      padding: 15px 0 10px 13px;
+      border-top: 2px solid black; }
+
+  a:hover {
+    background: none; } }
 
 /*# sourceMappingURL=style.css.map */

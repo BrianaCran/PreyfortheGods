@@ -1,0 +1,42 @@
+@media (max-width: 767px){
+
+               .nav{
+
+               
+                    img{
+                        width: 50%;
+                        position: relative;
+                        left: -50px;
+                    }
+                    .mobileN{
+                             display: inline-block;
+                             position: relative;
+                             left: -20px;
+                             top: 10px;
+                             font-size: 30px;
+                             cursor: pointer;
+
+                            }
+                    .drop{
+                          padding: 0;
+                          display: none;
+
+                          li{
+                             width: 100%;
+                             display: block;
+                             text-align: center;
+                             padding: 15px 0 10px 13px;
+                             border-top: 2px solid black;
+                          }
+                    }
+               }
+               a:hover{
+                       background: none;
+               }
+
+}
+@media (min-width: 769px)and(max-width: 1200px){
+
+
+
+}

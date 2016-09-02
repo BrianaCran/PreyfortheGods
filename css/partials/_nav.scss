@@ -11,25 +11,27 @@
            width: 22%;
            text-align: center;
 
-           a{
-             font-size: 22px;
-             text-transform: uppercase;
-             padding: 15px 50px 10px 50px;
-             font-weight: bold;
-             color: $blue;
-             text-decoration: none;
-           }
-           a:hover{
-                   color: white;
-                   background: black;
-           }
-
         }
+       }
+       a,.mobileN{
+         font-size: 22px;
+         text-transform: uppercase;
+         padding: 15px 50px 10px 50px;
+         font-weight: bold;
+         color: $blue;
+         text-decoration: none;
+       }
+       a:hover,.mobileN:hover{
+               color: white;
        }
        img{
            width: 80%;
            padding-top: 10px;
 
+       }
+       .mobileN{
+                display: none;
+                padding: 0;
        }
 
 

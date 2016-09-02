@@ -403,7 +403,7 @@ textarea {
   left: 13.5px; }
 
 .content {
-  padding: 50px 0 50px 0; }
+  padding: 50px 0px 50px 0px; }
   .content h1 {
     background: #7d0000;
     color: #a5ceeb;
@@ -417,18 +417,27 @@ textarea {
   .content iframe {
     position: relative;
     left: 18%; }
+  .content .twit {
+    padding-left: 8.5%; }
+  .content .media .twoC {
+    padding-left: 40px; }
   .content .media img {
     width: 92%;
-    padding-top: 10px; }
+    border: 2px solid #7d0000; }
   .content .button {
-    padding: 50px 0 0 25%; }
+    padding: 50px 0 0 5%; }
+    .content .button h2 {
+      color: white;
+      padding-bottom: 20px; }
     .content .button button {
       border: none;
       background: #7d0000;
       font-family: 'Finger Paint', cursive;
       color: white;
       font-size: 30px;
-      padding: 5px 20px 5px 20px; }
+      padding: 5px 20px 5px 20px;
+      position: relative;
+      left: 27%; }
 
 .footer {
   background: #7d0000;
@@ -436,7 +445,7 @@ textarea {
   .footer .fa {
     font-size: 40px;
     color: white;
-    padding-left: 10%; }
+    padding: 5px 0 0 10%; }
   .footer .fa:hover {
     color: black; }
   .footer p {
@@ -444,13 +453,13 @@ textarea {
 
 body {
   font-family: 'Open Sans', sans-serif;
-  background: url("../images/bg.png") no-repeat;
-  background-size: cover;
-  overflow-x: hidden; }
+  background: url("../images/bg.png");
+  background-size: auto 100%; }
   body .container-fluid {
     width: 100%;
     padding-left: 0;
-    padding-right: 0; }
+    padding-right: 0;
+    overflow-x: hidden; }
   body h1, body h2 {
     font-family: 'Finger Paint', cursive; }
 

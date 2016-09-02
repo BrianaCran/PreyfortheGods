@@ -1,0 +1,29 @@
+@import "partials/normalize";
+@import "partials/variables";
+@import "partials/mixins";
+@import "partials/nav";
+@import "partials/header";
+@import "partials/content";
+@import "partials/footer";
+
+
+body{
+     font-family: 'Open Sans', sans-serif;
+     background: url('../images/bg.png') no-repeat;
+     background-size: cover;
+    .container-fluid{
+                     width: 100%;
+                     padding-left: 0;
+                     padding-right: 0;
+                     overflow-x: hidden;
+    }
+
+     h1,h2{
+           font-family: 'Finger Paint', cursive;
+          }
+     }
+
+
+
+
+@import "partials/mediaQ";

@@ -1,0 +1,36 @@
+.nav{
+     background: $red;
+
+
+     ul{
+        list-style: none;
+        padding-top: 11px;
+
+        li{
+           display: inline-block;
+           width: 22%;
+           text-align: center;
+
+           a{
+             font-size: 22px;
+             text-transform: uppercase;
+             padding: 15px 50px 10px 50px;
+             font-weight: bold;
+             color: $blue;
+             text-decoration: none;
+           }
+           a:hover{
+                   color: white;
+                   background: black;
+           }
+
+        }
+       }
+       img{
+           width: 80%;
+           padding-top: 10px;
+
+       }
+
+
+}

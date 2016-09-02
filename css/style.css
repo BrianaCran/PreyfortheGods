@@ -488,6 +488,48 @@ body {
       border-top: 2px solid black; }
 
   a:hover {
-    background: none; } }
+    background: none; }
+
+  .header .third {
+    width: 92.8%;
+    top: 0px;
+    left: 15.48px; }
+
+  .content {
+    padding: 0 0% 0 3%; }
+    .content h1 {
+      width: 95%; }
+    .content p {
+      font-size: 22px;
+      font-weight: bold;
+      width: 95%;
+      padding-left: 10px; }
+    .content iframe {
+      position: relative;
+      left: 0;
+      width: 96%; }
+    .content .twit {
+      padding-left: 0%;
+      padding-right: 4.8%; }
+    .content .media .twoC {
+      padding-left: 0px; }
+    .content .media img {
+      width: 95%;
+      border: 2px solid #7d0000; }
+    .content .media .mobilefix {
+      padding-top: 20px; }
+    .content .button {
+      padding: 50px 0 20px 5%; }
+      .content .button button {
+        left: 22%; }
+
+  .footer .fa {
+    font-size: 50px;
+    color: white;
+    padding: 5px 0 0 12%; }
+  .footer .fa:hover {
+    color: black; }
+  .footer p {
+    padding: 20px 15px 10px 25px; } }
 
 /*# sourceMappingURL=style.css.map */

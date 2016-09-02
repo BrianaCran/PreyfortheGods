@@ -2,7 +2,6 @@
 
                .nav{
 
-               
                     img{
                         width: 50%;
                         position: relative;
@@ -32,6 +31,75 @@
                }
                a:hover{
                        background: none;
+               }
+               .header{
+
+                       .third{
+                              width: 92.8%;
+                              top: 0px;
+                              left: 15.48px;
+                       }
+
+               }
+               .content{
+                        padding:0 0% 0 3%;
+                        h1{
+                           width: 95%;
+
+                        }
+                        p{
+                          font-size: 22px;
+                          font-weight: bold;
+                          width: 95%;
+                          padding-left: 10px;
+                        }
+                   iframe{
+                          position: relative;
+                          left: 0;
+                          width: 96%;
+                         }
+                   .twit{
+                         padding-left: 0%;
+                         padding-right: 4.8%;
+                        }
+
+                  .media{
+                         .twoC{
+                               padding-left: 0px;
+                         }
+
+                         img{
+                             width: 95%;
+                             border: 2px solid $red;
+                             }
+
+                        .mobilefix{
+                                   padding-top: 20px;
+                        }
+
+                         }
+                  .button{
+                          padding: 50px 0 20px 5%;
+
+                   button{
+                         left: 22%;
+                         }
+
+                        }
+               }
+               .footer{
+
+                        .fa{
+                            font-size: 50px;
+                            color: white;
+                            padding: 5px 0 0 12%;
+                        }
+                        .fa:hover{
+                                color: black;
+                                }
+                       p{
+                         padding: 20px 15px 10px 25px;
+                       }
                }
 
 }

@@ -365,13 +365,15 @@ textarea {
   /* 2 */ }
 
 .nav {
-  background: #7d0000; }
+  background: #7d0000;
+  padding-top: 5px; }
   .nav ul {
     list-style: none;
-    padding-top: 11px; }
+    display: inline-block;
+    width: 70%;
+    padding-left: 50px; }
     .nav ul li {
       display: inline-block;
-      width: 22%;
       text-align: center; }
   .nav a, .nav .mobileN {
     font-size: 22px;
@@ -383,8 +385,7 @@ textarea {
   .nav a:hover, .nav .mobileN:hover {
     color: white; }
   .nav img {
-    width: 80%;
-    padding-top: 10px; }
+    width: 10.5%; }
   .nav .mobileN {
     display: none;
     padding: 0; }
@@ -456,7 +457,7 @@ textarea {
 body {
   font-family: 'Open Sans', sans-serif;
   background: url("../images/bg.png");
-  background-size: auto 100%; }
+  background-size: cover; }
   body .container-fluid {
     width: 100%;
     padding-left: 0;
@@ -474,12 +475,13 @@ body {
     display: inline-block;
     position: relative;
     left: -20px;
-    top: 10px;
+    top: 7px;
     font-size: 30px;
     cursor: pointer; }
   .nav .drop {
     padding: 0;
-    display: none; }
+    display: none;
+    width: 100%; }
     .nav .drop li {
       width: 100%;
       display: block;
@@ -495,8 +497,46 @@ body {
     top: 0px;
     left: 15.48px; }
 
+  .content iframe {
+    width: 96%; }
+  .content .twit {
+    padding-left: 0%;
+    padding-right: 4.8%; }
+  .content .media .twoC {
+    padding-left: 0px; }
+  .content .button {
+    padding: 50px 0 20px 5%; }
+    .content .button button {
+      left: 22%; }
+
+  .footer .fa {
+    font-size: 50px;
+    color: white;
+    padding: 5px 0 0 12%; }
+  .footer .fa:hover {
+    color: black; }
+  .footer p {
+    padding: 20px 15px 10px 25px; } }
+@media (min-width: 769px) and (max-width: 1200px) {
+  .nav {
+    padding: 0; }
+    .nav img {
+      width: 15%; }
+    .nav ul {
+      width: 100%; }
+      .nav ul li {
+        text-align: left; }
+
+  a:hover {
+    background: none; }
+
+  .header .third {
+    width: 96.8%;
+    top: -1px;
+    left: 13.8px; }
+
   .content {
-    padding: 0 0% 0 3%; }
+    padding-left: 3%; }
     .content h1 {
       width: 95%; }
     .content p {
@@ -507,10 +547,9 @@ body {
     .content iframe {
       position: relative;
       left: 0;
-      width: 96%; }
+      width: 95%; }
     .content .twit {
-      padding-left: 0%;
-      padding-right: 4.8%; }
+      padding-left: 1.2%; }
     .content .media .twoC {
       padding-left: 0px; }
     .content .media img {
@@ -519,17 +558,13 @@ body {
     .content .media .mobilefix {
       padding-top: 20px; }
     .content .button {
-      padding: 50px 0 20px 5%; }
+      padding: 50px 0 20px 9%; }
       .content .button button {
-        left: 22%; }
+        left: 30%; }
 
-  .footer .fa {
-    font-size: 50px;
-    color: white;
-    padding: 5px 0 0 12%; }
-  .footer .fa:hover {
-    color: black; }
-  .footer p {
-    padding: 20px 15px 10px 25px; } }
+  .footer {
+    padding: 10px 20% 10px 25%; }
+    .footer p {
+      padding: 20px 0px 10px 0px; } }
 
 /*# sourceMappingURL=style.css.map */

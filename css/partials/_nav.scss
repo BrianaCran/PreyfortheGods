@@ -1,15 +1,17 @@
 .nav{
      background: $red;
-
+     padding-top: 5px;
 
      ul{
         list-style: none;
-        padding-top: 11px;
+        display: inline-block;
+        width: 70%;
+        padding-left: 50px;
 
         li{
            display: inline-block;
-           width: 22%;
            text-align: center;
+
 
         }
        }
@@ -25,8 +27,7 @@
                color: white;
        }
        img{
-           width: 80%;
-           padding-top: 10px;
+           width: 10.5%;
 
        }
        .mobileN{

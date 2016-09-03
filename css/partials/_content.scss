@@ -19,10 +19,15 @@
            position: relative;
            left: 18%;
           }
-    .fire{
-          position: relative;
-          left: 23%;
+    .intro{
+           position: relative;
+           left: 23%;
+           border: 2px solid $red;
+          }
+    .introphoto{
+                width: 100%;
     }
+
     .twit{
           padding-left: 8.5%;
 

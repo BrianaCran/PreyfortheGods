@@ -420,9 +420,12 @@ textarea {
   .content iframe {
     position: relative;
     left: 18%; }
-  .content .fire {
+  .content .intro {
     position: relative;
-    left: 23%; }
+    left: 23%;
+    border: 2px solid #7d0000; }
+  .content .introphoto {
+    width: 100%; }
   .content .twit {
     padding-left: 8.5%; }
   .content .media .twoC {
@@ -472,6 +475,8 @@ body {
     overflow-x: hidden; }
   body h1, body h2 {
     font-family: 'Finger Paint', cursive; }
+  body h3 {
+    font-weight: bold; }
 
 @media (max-width: 767px) {
   .nav img {
@@ -516,7 +521,7 @@ body {
     .content p {
       width: 100%;
       padding-left: 10px; }
-    .content .fire {
+    .content .intro {
       position: relative;
       left: 0%;
       width: 100%; }
@@ -576,8 +581,9 @@ body {
       position: relative;
       left: 0;
       width: 95%; }
-    .content .fire {
-      left: 20%; }
+    .content .intro {
+      left: 20%;
+      width: 100%; }
     .content .twit {
       padding-left: 0.5%; }
     .content .media .twoc {

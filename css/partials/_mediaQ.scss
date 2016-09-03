@@ -50,9 +50,17 @@
                            left: 0px;
                             width: 100%;
                          }
+                      span{
+                           padding-left: 45px;
+                      }
                        p{
                            width: 100%;
                            padding-left: 10px;
+                         }
+                   .fire{
+                         position: relative;
+                         left: 0%;
+                         width: 100%;
                          }
                    .twit{
                          padding-left: 3.6%;
@@ -60,19 +68,25 @@
                         }
 
                   .media{
-                         .twoC{
-                               padding-left: 0px;
-                         }
+                  
                          img{
                              width: 100%;
                          }
-
+                         .finalT{
+                                 padding-left: 4%;
+                                 img{
+                                     width: 95%;
+                                 }
+                               }
                          }
                   .button{
                           padding: 50px 0 20px 10%;
-
+                          h2{
+                             width: 80%;
+                             padding-left: 13%;
+                          }
                    button{
-                         left: 16%;
+                         left: 13%;
                          }
 
                         }
@@ -138,27 +152,29 @@
               left: 0;
               width: 95%;
             }
+      .fire{
+            left: 20%;
+           }
       .twit{
             padding-left: 0.5%;
            }
 
      .media{
-            .twoC{
-                  padding-left: 0px;
-            }
+            .twoc{
+                  padding: 20px 0 0 0;
+                 }
 
-            img{
-                width: 95%;
-                border: 2px solid $red;
-                }
+            .finalT{
+                    padding-left: 5%;
+                img{
+                    width: 92%;
+                   }
+                   }
 
-           .mobilefix{
-                      padding-top: 20px;
-                     }
 
             }
      .button{
-             padding: 50px 0 20px 9%;
+             padding: 50px 0 20px 12.5%;
 
       button{
             left: 30%;

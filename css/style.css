@@ -426,14 +426,10 @@ textarea {
   .content .twit {
     padding-left: 8.5%; }
   .content .media .twoC {
-    padding-left: 40px; }
-  .content .media img {
-    width: 92%;
-    border: 2px solid #7d0000; }
-  .content .media .twoCsupport {
     padding: 20px 0 0 15px; }
-    .content .media .twoCsupport img {
-      width: 95%; }
+    .content .media .twoC img {
+      width: 95%;
+      border: 2px solid #7d0000; }
   .content .media .finalT {
     padding-left: 25%; }
     .content .media .finalT img {
@@ -451,7 +447,7 @@ textarea {
       font-size: 30px;
       padding: 5px 20px 5px 20px;
       position: relative;
-      left: 27%; }
+      left: 25%; }
 
 .footer {
   background: #7d0000;
@@ -515,20 +511,31 @@ body {
       position: relative;
       left: 0px;
       width: 100%; }
+    .content span {
+      padding-left: 45px; }
     .content p {
       width: 100%;
       padding-left: 10px; }
+    .content .fire {
+      position: relative;
+      left: 0%;
+      width: 100%; }
     .content .twit {
       padding-left: 3.6%;
       padding-right: 4.5%; }
-    .content .media .twoC {
-      padding-left: 0px; }
     .content .media img {
       width: 100%; }
+    .content .media .finalT {
+      padding-left: 4%; }
+      .content .media .finalT img {
+        width: 95%; }
     .content .button {
       padding: 50px 0 20px 10%; }
+      .content .button h2 {
+        width: 80%;
+        padding-left: 13%; }
       .content .button button {
-        left: 16%; }
+        left: 13%; }
 
   .footer .fa {
     font-size: 50px;
@@ -569,17 +576,18 @@ body {
       position: relative;
       left: 0;
       width: 95%; }
+    .content .fire {
+      left: 20%; }
     .content .twit {
       padding-left: 0.5%; }
-    .content .media .twoC {
-      padding-left: 0px; }
-    .content .media img {
-      width: 95%;
-      border: 2px solid #7d0000; }
-    .content .media .mobilefix {
-      padding-top: 20px; }
+    .content .media .twoc {
+      padding: 20px 0 0 0; }
+    .content .media .finalT {
+      padding-left: 5%; }
+      .content .media .finalT img {
+        width: 92%; }
     .content .button {
-      padding: 50px 0 20px 9%; }
+      padding: 50px 0 20px 12.5%; }
       .content .button button {
         left: 30%; }
 

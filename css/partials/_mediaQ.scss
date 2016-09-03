@@ -43,26 +43,36 @@
 
                }
                .content{
-
+                        padding-left: 3%;
+                        padding-right: 3%;
                    iframe{
-                          width: 96%;
+                           position: relative;
+                           left: 0px;
+                            width: 100%;
+                         }
+                       p{
+                           width: 100%;
+                           padding-left: 10px;
                          }
                    .twit{
-                         padding-left: 0%;
-                         padding-right: 4.8%;
+                         padding-left: 3.6%;
+                         padding-right: 4.5%;
                         }
 
                   .media{
                          .twoC{
                                padding-left: 0px;
                          }
+                         img{
+                             width: 100%;
+                         }
 
                          }
                   .button{
-                          padding: 50px 0 20px 5%;
+                          padding: 50px 0 20px 10%;
 
                    button{
-                         left: 22%;
+                         left: 16%;
                          }
 
                         }
@@ -124,12 +134,12 @@
              padding-left: 10px;
            }
       iframe{
-             position: relative;
-             left: 0;
-             width: 95%;
+              position: relative;
+              left: 0;
+              width: 95%;
             }
       .twit{
-            padding-left: 1.2%;
+            padding-left: 0.5%;
            }
 
      .media{
@@ -144,7 +154,7 @@
 
            .mobilefix{
                       padding-top: 20px;
-           }
+                     }
 
             }
      .button{

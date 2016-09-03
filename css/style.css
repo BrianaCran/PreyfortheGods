@@ -420,6 +420,9 @@ textarea {
   .content iframe {
     position: relative;
     left: 18%; }
+  .content .fire {
+    position: relative;
+    left: 23%; }
   .content .twit {
     padding-left: 8.5%; }
   .content .media .twoC {
@@ -427,6 +430,14 @@ textarea {
   .content .media img {
     width: 92%;
     border: 2px solid #7d0000; }
+  .content .media .twoCsupport {
+    padding: 20px 0 0 15px; }
+    .content .media .twoCsupport img {
+      width: 95%; }
+  .content .media .finalT {
+    padding-left: 25%; }
+    .content .media .finalT img {
+      width: 70%; }
   .content .button {
     padding: 50px 0 0 5%; }
     .content .button h2 {
@@ -497,17 +508,27 @@ body {
     top: 0px;
     left: 15.48px; }
 
-  .content iframe {
-    width: 96%; }
-  .content .twit {
-    padding-left: 0%;
-    padding-right: 4.8%; }
-  .content .media .twoC {
-    padding-left: 0px; }
-  .content .button {
-    padding: 50px 0 20px 5%; }
-    .content .button button {
-      left: 22%; }
+  .content {
+    padding-left: 3%;
+    padding-right: 3%; }
+    .content iframe {
+      position: relative;
+      left: 0px;
+      width: 100%; }
+    .content p {
+      width: 100%;
+      padding-left: 10px; }
+    .content .twit {
+      padding-left: 3.6%;
+      padding-right: 4.5%; }
+    .content .media .twoC {
+      padding-left: 0px; }
+    .content .media img {
+      width: 100%; }
+    .content .button {
+      padding: 50px 0 20px 10%; }
+      .content .button button {
+        left: 16%; }
 
   .footer .fa {
     font-size: 50px;
@@ -549,7 +570,7 @@ body {
       left: 0;
       width: 95%; }
     .content .twit {
-      padding-left: 1.2%; }
+      padding-left: 0.5%; }
     .content .media .twoC {
       padding-left: 0px; }
     .content .media img {

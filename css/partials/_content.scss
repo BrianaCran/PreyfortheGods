@@ -65,6 +65,18 @@
           left: 25%;
           }
          }
-
-
+}
+.faq{
+     span{
+          font-weight: bold;
+     }
+     p{
+      width: 90%;
+      padding-left: 6%;
+      text-indent: 0;
+     }
+     h3{
+        border: 2px solid $red;
+        padding: 5px;
+     }
 }

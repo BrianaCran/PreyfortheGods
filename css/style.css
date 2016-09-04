@@ -462,6 +462,36 @@ textarea {
   border: 2px solid #7d0000;
   padding: 5px; }
 
+.presskit .subH, .presskit .hborder {
+  background: none;
+  border: 2px solid #7d0000;
+  color: white; }
+.presskit .hborder {
+  padding: 8px; }
+.presskit h2 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold; }
+.presskit .lower {
+  padding-top: 6px; }
+.presskit ul {
+  list-style-type: none;
+  padding: 0px; }
+  .presskit ul h3 {
+    font-size: 20px; }
+  .presskit ul p {
+    width: 100%;
+    font-size: 16px;
+    text-indent: 0; }
+.presskit iframe {
+  padding: 10px 0 0 0;
+  width: 100%;
+  left: 0; }
+.presskit .logo img {
+  width: 80%;
+  padding-left: 15%; }
+.presskit .empty {
+  padding: 35px; }
+
 .footer {
   background: #7d0000;
   padding: 10px 0 10px 0px; }

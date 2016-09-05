@@ -91,6 +91,26 @@
 
                         }
                }
+               .presskit{
+                         iframe{
+                                width: 100%;
+                                height: 300px;
+                         }
+                         ul{
+                            padding-left: 10%;
+                         }
+                         .logo{
+                               img{
+                                   width: 100%;
+                                   padding-left: 0;
+                                   }
+                                 }
+                          .thanks{
+                                  p{
+                                    text-indent: 0;
+                                  }
+                          }
+                         }
                .footer{
 
                         .fa{
@@ -189,6 +209,11 @@
              font-weight: normal;
              padding:2% 0 2% 6%;
            }
+      }
+      .presskit{
+                .introphoto{
+                            width: 95%;
+                }
       }
   .footer{
           padding: 10px 20% 10px 25%;

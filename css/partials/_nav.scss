@@ -1,39 +1,39 @@
 .nav{
-     background: $red;
-     padding-top: 5px;
+     background: black;
 
-     ul{
-        list-style: none;
-        display: inline-block;
-        width: 70%;
-        padding-left: 50px;
+     button{
+            background: $red;
+            padding: 12px 0 0px 0;
+            border: 0;
+            display: inline-block;
+            outline: none;
+            text-transform: uppercase;
+           }
 
-        li{
-           display: inline-block;
-           text-align: center;
-
-
-        }
-       }
        a,.mobileN{
          font-size: 22px;
-         text-transform: uppercase;
-         padding: 15px 50px 10px 50px;
          font-weight: bold;
          color: $blue;
          text-decoration: none;
        }
-       a:hover,.mobileN:hover{
-               color: white;
+       a:hover,.mobileN:hover,button:hover{
+                                            color: white;
+                                            background: black;
        }
        img{
-           width: 10.5%;
+           width: 55%;
+           position: relative;
+           top: -3px;
 
+       }
+       .logoImage{
+                  border-bottom: 4px solid black;
+       }
+       .drop{
+             padding-bottom: 2px;
        }
        .mobileN{
                 display: none;
-                padding: 0;
+                padding-left: 10%;
        }
-
-
 }

@@ -1,34 +1,27 @@
 @media (max-width: 767px){
 
                .nav{
-
-                    img{
-                        width: 50%;
-                        position: relative;
-                        left: -50px;
-                    }
+                    .logoImage{
+                               width: 49%;
+                                img{
+                                    width: 100%;
+                                   }
+                              }
                     .mobileN{
                              display: inline-block;
-                             position: relative;
-                             left: -20px;
-                             top: 7px;
                              font-size: 30px;
                              cursor: pointer;
+                             position: relative;
+                             top: 3px;
+                             left: 15px;
 
                             }
-                    .drop{
-                          padding: 0;
-                          display: none;
-                          width: 100%;
+                   .drop{
+                         display: none;
+                         width: 100%;
+                         border-top: 2px solid black;
+                        }
 
-                          li{
-                             width: 100%;
-                             display: block;
-                             text-align: center;
-                             padding: 15px 0 10px 13px;
-                             border-top: 2px solid black;
-                          }
-                    }
                }
                a:hover{
                        background: none;
@@ -130,18 +123,19 @@
 @media (min-width: 769px)and(max-width: 1200px){
 
   .nav{
-       padding: 0;
 
        img{
-           width: 15%;
-          }
-
-       ul{
-           width: 100%;
-             li{
-                text-align: left;
-                }
+           width: 80%;
        }
+       button{
+              padding: 7px 0 6px 0;
+              border: 0;
+       }
+       .drop{
+             display: inline-block;
+             width: 19.5%;
+       }
+
   }
   a:hover{
           background: none;
@@ -223,4 +217,11 @@
 
 
 }
+}
+@media(min-width: 1201px){
+       .nav{
+            button{
+                   width: 19.75%;
+            }
+       }
 }

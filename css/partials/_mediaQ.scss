@@ -3,6 +3,7 @@
                .nav{
                     .logoImage{
                                width: 49%;
+                               padding-bottom: 10px;
                                 img{
                                     width: 100%;
                                    }
@@ -38,6 +39,7 @@
                .content{
                         padding-left: 3%;
                         padding-right: 3%;
+                        border: none;
                    iframe{
                            position: relative;
                            left: 0px;
@@ -124,16 +126,17 @@
 
   .nav{
 
-       img{
-           width: 80%;
+       .logoImage{
+           width: 20%;
        }
        button{
-              padding: 7px 0 6px 0;
+              padding: 7px 0 7px 0;
               border: 0;
        }
        .drop{
              display: inline-block;
              width: 19.5%;
+             padding-bottom: 7px;
        }
 
   }
@@ -151,6 +154,7 @@
   }
   .content{
            padding-left: 3%;
+
            h1{
               width: 95%;
 

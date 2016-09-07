@@ -1,7 +1,7 @@
 .content{
          position: relative;
          padding: 50px 0px 50px 0px;
-         
+
          border-style: solid;
          border-width: 39px 0px 61px;
          -moz-border-image: url(../images/border.svg) 39 0 61 stretch;
@@ -22,10 +22,12 @@
            font-size: 20px;
            line-height: 30px;
            text-indent: 50px;
+           padding: 10px 0 10px 0;
           }
     iframe{
            position: relative;
            left: 18%;
+           border: 2px solid $red;
           }
     .intro{
            position: relative;
@@ -33,7 +35,10 @@
            border: 2px solid $red;
           }
     .introphoto{
-                width: 100%;
+                width: 70%;
+                border: 2px solid $red;
+                position: relative;
+                left: 15%;
     }
 
     .twit{

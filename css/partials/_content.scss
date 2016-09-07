@@ -1,54 +1,41 @@
 .content{
          position: relative;
          padding: 50px 0px 50px 0px;
+         @include desktopBorder;
 
-         border-style: solid;
-         border-width: 39px 0px 61px;
-         -moz-border-image: url(../images/border.svg) 39 0 61 stretch;
-         -webkit-border-image: url(../images/border.svg) 39 0 61 stretch;
-         -o-border-image: url(../images/border.svg) 39 0 61 stretch;
-         border-image: url(../images/border.svg) 39 0 61 fill stretch;
-
-         z-index: 100;
          h1{
             background: $red;
             color: $blue;
             padding: 10px 0px 10px 0;
             text-indent: 50px;
             font-size: 40px;
-
          }
          p{
            font-size: 20px;
-           line-height: 30px;
-           text-indent: 50px;
+           line-height: 35px;
            padding: 10px 0 10px 0;
           }
+    iframe,.intro,.introphoto{
+                              border: 2px solid $red;
+                              position: relative;
+          }
     iframe{
-           position: relative;
            left: 18%;
-           border: 2px solid $red;
           }
     .intro{
-           position: relative;
            left: 23%;
-           border: 2px solid $red;
           }
     .introphoto{
                 width: 70%;
-                border: 2px solid $red;
-                position: relative;
                 left: 15%;
-    }
-
-    .twit{
-          padding-left: 8.5%;
-
-         }
-
+              }
    .media{
-          .twoC{
-                padding: 20px 0 0 15px;
+          .twoCol{
+                  padding: 20px 0 0 0px;
+                  a{
+                    outline: none;
+                    padding-left: 15px;
+                  }
                 img{
                     width: 95%;
                     border: 2px solid $red;
@@ -66,16 +53,15 @@
            h2{
               color: white;
               padding-bottom: 20px;
-           }
-    button{
-          border: none;
-          background: $red;
-          font-family: 'Finger Paint', cursive;
-          color: white;
-          font-size: 30px;
-          padding: 5px 20px 5px 20px;
-          position: relative;
-          left: 25%;
+             }
+           button{
+                  background: black;
+                  font-family: 'Finger Paint', cursive;
+                  color: $blue;
+                  font-size: 30px;
+                  padding: 5px 20px 5px 20px;
+                  position: relative;
+                  left: 25%;
           }
          }
 }
@@ -95,14 +81,13 @@
 }
 .presskit{
           .subH,.hborder{
-                background: none;
-                border: 2px solid $red;
-                color: white;
-          }
+                          background: none;
+                          border: 2px solid $red;
+                          color: white;
+                  }
           .hborder{
                    padding: 8px;
-          }
-
+                  }
           h2{
              font-family: 'Open Sans', sans-serif;
              font-weight: bold;
@@ -123,11 +108,9 @@
              }
           }
           iframe{
-                 padding: 10px 0 0 0;
                  width: 100%;
                  left: 0;
-
-          }
+                }
           .logo{
                 img{
                     width: 80%;

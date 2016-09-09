@@ -1,18 +1,12 @@
 $(document).ready(function(){
-
-    $('.mobileN').click(function(){
-
-      $('.drop').toggle('fast');
-
-    });
-
-
-});
-$(document).ready(function() {
-  $('.gallery-item').magnificPopup({
-  type: 'image',
-  gallery:{
-    enabled:true
-  }
-});
+  $('.mobileN').click(function() {
+      if ($('.mobileN').hasClass("clicked-once")) {
+  			$('.drop').hide();
+  			$('.mobileN').removeClass("clicked-once");
+      }
+      else {
+  			$('.mobileN').addClass("clicked-once");
+        $('.drop').show();
+      }
+  });
 });

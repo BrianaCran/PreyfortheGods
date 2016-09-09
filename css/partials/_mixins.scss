@@ -14,3 +14,9 @@
                     -o-border-image: url(../images/breakline.svg) 25 27 0 0 stretch;
                     border-image: url(../images/breakline.svg) 25 27 0 0 fill stretch;
                    }
+@mixin clickDecor{
+                  font-size: 14px;
+                  cursor: pointer;
+                  text-decoration: underline;
+                  position: relative;
+                 }

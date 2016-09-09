@@ -29,29 +29,32 @@
                 width: 70%;
                 left: 15%;
               }
+    .tiers{
+          font-weight: bold;
+          font-size: 16px;
+          cursor: pointer;
+    }
+    .tierExplanation{
+                     display: none;
+    }
    .media{
           .twoCol{
                   padding: 20px 0 0 0px;
                   a{
                     outline: none;
-                    padding-left: 15px;
+                    padding-left: 10px;
                   }
                 img{
                     width: 95%;
                     border: 2px solid $red;
                    }
                  }
-          .finalT{
-                  padding-left: 25%;
-                  img{
-                      width: 70%;
-                  }
-                }
           }
    .button{
-           padding: 50px 0 0 5%;
+           padding-top: 20px;
            h2{
               color: white;
+              text-align: center;
               padding-bottom: 20px;
              }
            button{
@@ -61,7 +64,7 @@
                   font-size: 30px;
                   padding: 5px 20px 5px 20px;
                   position: relative;
-                  left: 25%;
+                  left: 40%;
           }
          }
 }
@@ -119,5 +122,129 @@
                   }
           .empty{
                  padding: 35px;
+          }
+}
+.checkout{
+          .buying{
+                  left: 18%;
+                  position: relative;
+                  width: 62%;
+                 }
+          .unseen{
+                   display: none;
+          }
+          .nextI{
+                 display: none;
+          }
+                 .thumbnail{
+                            width: 10%;
+                            display: inline-block;
+                            padding: 0;
+                            border-radius: 0;
+                            border: none;
+                            position: relative;
+                            left: 18%;
+                 }
+          .formbox{
+                   clear: both;
+                   background: rgba(255,255,255,.5);
+                   padding: 20px 0px 10px 0px;
+                   width: 80%;
+                   position: relative;
+                   left: 10%;
+                   #title{
+                          display: inline-block;
+                   }
+
+                   p{
+                     display: inline-block;
+                     padding-left: 20px;
+                     font-size: 16px;
+                   }
+                   button,.button{
+                          border-radius: 10px;
+                          padding: 10px 20px 10px 20px;
+                          font-size: 20px;
+                          background: black;
+                          color: $blue;
+                   }
+                   button:hover{
+                                color: white;
+
+                   }
+                   .fa{
+                       padding-left: 10px;
+                       font-size: 20px;
+                   }
+                   .details{
+                            padding:0 0 15px 40px;
+                            .bolder{
+                                    font-weight: bold;
+                                    font-size: 25px;
+                            }
+                            img{
+                                width: 30%;
+                                }
+                           .included{
+                                     @include clickDecor;
+                                     position: relative;
+                                     top: 49px;
+
+                               }
+                           ul{    clear: both;
+                                  display: none;
+                                  padding-top: 10px;
+                                  font-weight: bold;
+                                  display: inline-block;
+                             }
+                            .items{
+                                    float: left;
+                                    display: none;
+                            }
+                    }
+                    .information{
+                                 clear: both;
+                                 border-top: 2px solid black;
+                                 padding: 15px 0px 15px 40px;
+                                 p{
+                                   padding: 0px 20px 0px 0px;
+                                 }
+                                 input{
+                                       padding: 5px;
+                                 }
+                                 input[type='checkbox'],.fa-gift{
+                                                         position: relative;
+                                                         left: 24.5%;
+                                 }
+                                 input[type='number'],.moreRight{
+                                                       display: none;
+                                 }
+                                 .button{
+                                         padding-left: 15px;
+                                         text-align: center;
+                                 }
+                                 .moreRight{
+                                            float: right;
+                                            padding-right: 140px;
+                                            font-weight: bold;
+                                 }
+                                 .fa-gift{
+                                          top: 1px;
+                                 }
+
+                    }
+                    .payment{
+                              padding: 10px 0px 15px 40px;
+                             .options{
+                                      @include clickDecor;
+                                      float: right;
+                                      padding-right: 8%;
+                             }
+                             .option2{
+                                      display: none;
+                             }
+                    }
+
+
           }
 }

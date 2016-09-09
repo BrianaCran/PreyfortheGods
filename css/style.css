@@ -438,22 +438,25 @@ textarea {
   .content .introphoto {
     width: 70%;
     left: 15%; }
+  .content .tiers {
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer; }
+  .content .tierExplanation {
+    display: none; }
   .content .media .twoCol {
     padding: 20px 0 0 0px; }
     .content .media .twoCol a {
       outline: none;
-      padding-left: 15px; }
+      padding-left: 10px; }
     .content .media .twoCol img {
       width: 95%;
       border: 2px solid #7d0000; }
-  .content .media .finalT {
-    padding-left: 25%; }
-    .content .media .finalT img {
-      width: 70%; }
   .content .button {
-    padding: 50px 0 0 5%; }
+    padding-top: 20px; }
     .content .button h2 {
       color: white;
+      text-align: center;
       padding-bottom: 20px; }
     .content .button button {
       background: black;
@@ -462,7 +465,7 @@ textarea {
       font-size: 30px;
       padding: 5px 20px 5px 20px;
       position: relative;
-      left: 25%; }
+      left: 40%; }
 
 .faq span {
   font-weight: bold; }
@@ -502,6 +505,103 @@ textarea {
   padding-left: 15%; }
 .presskit .empty {
   padding: 35px; }
+
+.checkout .buying {
+  left: 18%;
+  position: relative;
+  width: 62%; }
+.checkout .unseen {
+  display: none; }
+.checkout .nextI {
+  display: none; }
+.checkout .thumbnail {
+  width: 10%;
+  display: inline-block;
+  padding: 0;
+  border-radius: 0;
+  border: none;
+  position: relative;
+  left: 18%; }
+.checkout .formbox {
+  clear: both;
+  background: rgba(255, 255, 255, 0.5);
+  padding: 20px 0px 10px 0px;
+  width: 80%;
+  position: relative;
+  left: 10%; }
+  .checkout .formbox #title {
+    display: inline-block; }
+  .checkout .formbox p {
+    display: inline-block;
+    padding-left: 20px;
+    font-size: 16px; }
+  .checkout .formbox button, .checkout .formbox .button {
+    border-radius: 10px;
+    padding: 10px 20px 10px 20px;
+    font-size: 20px;
+    background: black;
+    color: #a5ceeb; }
+  .checkout .formbox button:hover {
+    color: white; }
+  .checkout .formbox .fa {
+    padding-left: 10px;
+    font-size: 20px; }
+  .checkout .formbox .details {
+    padding: 0 0 15px 40px; }
+    .checkout .formbox .details .bolder {
+      font-weight: bold;
+      font-size: 25px; }
+    .checkout .formbox .details img {
+      width: 30%; }
+    .checkout .formbox .details .included {
+      font-size: 14px;
+      cursor: pointer;
+      text-decoration: underline;
+      position: relative;
+      position: relative;
+      top: 49px; }
+    .checkout .formbox .details ul {
+      clear: both;
+      display: none;
+      padding-top: 10px;
+      font-weight: bold;
+      display: inline-block; }
+    .checkout .formbox .details .items {
+      float: left;
+      display: none; }
+  .checkout .formbox .information {
+    clear: both;
+    border-top: 2px solid black;
+    padding: 15px 0px 15px 40px; }
+    .checkout .formbox .information p {
+      padding: 0px 20px 0px 0px; }
+    .checkout .formbox .information input {
+      padding: 5px; }
+    .checkout .formbox .information input[type='checkbox'], .checkout .formbox .information .fa-gift {
+      position: relative;
+      left: 24.5%; }
+    .checkout .formbox .information input[type='number'], .checkout .formbox .information .moreRight {
+      display: none; }
+    .checkout .formbox .information .button {
+      padding-left: 15px;
+      text-align: center; }
+    .checkout .formbox .information .moreRight {
+      float: right;
+      padding-right: 140px;
+      font-weight: bold; }
+    .checkout .formbox .information .fa-gift {
+      top: 1px; }
+  .checkout .formbox .payment {
+    padding: 10px 0px 15px 40px; }
+    .checkout .formbox .payment .options {
+      font-size: 14px;
+      cursor: pointer;
+      text-decoration: underline;
+      position: relative;
+      float: right;
+      padding-right: 8%; }
+    .checkout .formbox .payment .option2 {
+      display: none; }
 
 .footer {
   background: #7d0000;
@@ -567,7 +667,7 @@ body {
     left: 30%; }
 
   .content {
-    padding: 1% 3% 0 3%;
+    padding: .5% 3% 0 3%;
     border: none; }
     .content h1 {
       padding: 10px 0px 10px 0;
@@ -576,8 +676,6 @@ body {
     .content iframe, .content .intro, .content .introphoto {
       left: 0px;
       width: 100%; }
-    .content .support {
-      padding-left: 45px; }
     .content p {
       width: 100%;
       padding-left: 10px; }
@@ -588,15 +686,10 @@ body {
       padding-left: 0; }
       .content .media .twoCol a img {
         width: 100%; }
-    .content .media .finalT {
-      padding-left: 4%; }
-      .content .media .finalT img {
-        width: 95%; }
     .content .button {
-      padding: 10px 0 20px 10%; }
+      padding: 10px 0 40px 10%; }
       .content .button h2 {
-        width: 80%;
-        text-align: center; }
+        width: 80%; }
       .content .button button {
         left: 13%; }
 
@@ -610,6 +703,53 @@ body {
     padding-left: 0; }
   .presskit .thanks p {
     text-indent: 0; }
+
+  .checkout {
+    padding-bottom: 50px; }
+    .checkout .buying, .checkout .thumbnail {
+      width: 100%;
+      left: 0; }
+    .checkout .thumbnail {
+      width: 25%;
+      margin-left: 5%; }
+    .checkout .formbox {
+      width: 100%;
+      left: 0; }
+      .checkout .formbox p {
+        text-align: left;
+        padding-left: 0; }
+      .checkout .formbox .details {
+        padding: 0 0 0px 30px; }
+        .checkout .formbox .details img {
+          width: 90%; }
+        .checkout .formbox .details p {
+          font-size: 22px; }
+        .checkout .formbox .details ul {
+          padding-top: 30px; }
+        .checkout .formbox .details .included {
+          top: 20px;
+          font-size: 18px; }
+      .checkout .formbox .information .button {
+        width: 60%; }
+      .checkout .formbox .information input[type='text'] {
+        width: 90%; }
+      .checkout .formbox .information input[type='checkbox'], .checkout .formbox .information .fa-gift {
+        left: .5%;
+        display: block;
+        top: 20px; }
+      .checkout .formbox .information .fa-gift {
+        top: 3px;
+        left: 20px; }
+      .checkout .formbox .tip {
+        padding-left: 25%; }
+      .checkout .formbox .payment {
+        padding: 20px 0 80px 20%; }
+        .checkout .formbox .payment .mobileV {
+          position: relative;
+          top: 10px; }
+        .checkout .formbox .payment .options {
+          font-size: 25px;
+          padding: 40px 0 0 15px; }
 
   .footer .fa {
     font-size: 50px;
@@ -653,12 +793,8 @@ body {
       padding-left: 0; }
     .content .media .twoCol img {
       width: 90%; }
-    .content .media .finalT {
-      padding-left: 5%; }
-      .content .media .finalT img {
-        width: 92%; }
     .content .button {
-      padding: 10px 0 20px 12.5%; }
+      padding-bottom: 40px; }
       .content .button button {
         left: 30%; }
 
@@ -678,6 +814,49 @@ body {
   .presskit .linkspace a {
     padding: 10px 0 0 10px;
     display: block; }
+
+  .checkout {
+    padding-bottom: 50px; }
+    .checkout .buying, .checkout .thumbnail {
+      width: 95%;
+      left: 0; }
+    .checkout .thumbnail {
+      width: 25%;
+      margin-left: 5%; }
+    .checkout .formbox {
+      width: 95%;
+      left: 0; }
+      .checkout .formbox .details {
+        padding: 0 0 0px 10%; }
+        .checkout .formbox .details img {
+          width: 90%; }
+        .checkout .formbox .details p {
+          font-size: 22px; }
+        .checkout .formbox .details ul {
+          padding-top: 30px; }
+        .checkout .formbox .details .included {
+          top: 20px;
+          font-size: 18px; }
+      .checkout .formbox .information {
+        padding-left: 10%; }
+        .checkout .formbox .information .button {
+          width: 60%; }
+        .checkout .formbox .information input[type='text'] {
+          width: 89%; }
+        .checkout .formbox .information input[type='checkbox'], .checkout .formbox .information .fa-gift {
+          left: .5%;
+          display: block;
+          top: 20px; }
+        .checkout .formbox .information .fa-gift {
+          top: 3px;
+          left: 20px; }
+      .checkout .formbox .tip {
+        padding-left: 30%; }
+      .checkout .formbox .payment {
+        padding: 20px 0 80px 18%; }
+        .checkout .formbox .payment .options {
+          font-size: 25px;
+          padding: 40px 0 0 18%; }
 
   .footer {
     padding: 10px 20% 10px 25%; }

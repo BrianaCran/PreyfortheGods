@@ -1856,3 +1856,13 @@ $.magnificPopup.registerModule(RETINA_NS, {
 
 /*>>retina*/
  _checkInstance(); }));
+
+
+ $(document).ready(function() {
+   $('.gallery-item').magnificPopup({
+   type: 'image',
+   gallery:{
+     enabled:true
+   }
+    });
+ });

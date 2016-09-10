@@ -623,6 +623,9 @@ textarea {
         text-align: center; }
         .studio .nav ul li .mobileLink {
           display: none; }
+        .studio .nav ul li .logoImage {
+          width: 40%;
+          padding-top: 5px; }
   .studio .content {
     border: none; }
     .studio .content h1 {
@@ -769,16 +772,23 @@ body {
       .content .button button {
         left: 13%; }
 
+  .presskit h2 {
+    text-align: center; }
   .presskit iframe {
     width: 100%;
     height: 300px; }
   .presskit ul {
     padding-left: 10%; }
+    .presskit ul p {
+      font-size: 20px; }
   .presskit .logo img {
     width: 100%;
     padding-left: 0; }
   .presskit .thanks p {
     text-indent: 0; }
+  .presskit .linkspace {
+    font-size: 20px;
+    line-height: 40px; }
 
   .checkout {
     padding-bottom: 50px; }
@@ -834,8 +844,8 @@ body {
     font-size: 50px;
     color: white;
     padding: 5px 0 0 12%; }
-  .footer p {
-    padding: 20px 15px 10px 25px; } }
+  .footer .copywrite p {
+    padding: 20px 15px 10px 50px; } }
 @media (min-width: 769px) and (max-width: 1249px) {
   body hr {
     display: block; }
@@ -886,6 +896,8 @@ body {
 
   .presskit .introphoto, .presskit .hborder {
     width: 95%; }
+  .presskit .notTablet {
+    display: none; }
   .presskit ul li {
     padding-left: 20px; }
     .presskit ul li p, .presskit ul li a {
@@ -940,7 +952,7 @@ body {
           padding: 40px 0 0 18%; }
 
   .footer .copywrite p {
-    padding: 20px 0px 10px 0px; } }
+    padding: 20px 0px 10px 80px; } }
 @media (min-width: 1250px) {
   .nav button {
     width: 19.7%; }

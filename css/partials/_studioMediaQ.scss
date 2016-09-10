@@ -1,0 +1,115 @@
+@media(max-width: 767px){
+  .studio{
+          .nav{
+               ul{
+                  padding-left: 0;
+                   li{
+                      width: 32%;
+                      padding-left: 15px;
+                      .mobileLink{
+                                  display: inline-block;
+                                 }
+                      .desktopLink{
+                                   display: none;
+                                  }
+                     }
+                   }
+                  .logoImage{
+                             padding-top: 10px;
+                             width: 100%;
+                            }
+              }
+           .content{
+                    padding: 0px;
+                    .vid{
+                         iframe{
+                                left: 4.8%;
+                                width: 90%;
+                               }
+                        }
+                    .team{
+                          img{
+                              padding-top: 10px;
+                             }
+                         }
+                    .button{
+                            padding-left: 20px;
+                            h2{
+                               padding-left: 60px;
+                              }
+                            img{
+                                width: 90%;
+                               }
+                            button{
+                                    left: 25%;
+                                  }
+                            }
+                   }
+         .footer{
+           padding-right: 15px;
+                 form{
+                      padding: 20px 0 10px 12%;
+                      p{
+                        padding: 5px 0 0 0;
+                       }
+                      .formLeft{
+                                input[type="text"]{
+                                                   width: 118%;
+                                                  }
+                      }
+                      .formRight{
+                                 input[type="text"]{
+                                                    width: 90%;
+                                                    }
+                      }
+                      .underFloat{
+                                  textarea,input[type="text"]{
+                                           width: 77%;
+                                  }
+                      }
+                 }
+               }
+  }
+}
+
+@media (min-width: 769px)and(max-width: 1249px){
+
+  .studio{
+          .nav{
+                .logoImage{
+                            width: 50%;
+                            padding-top: 5px;
+                          }
+               }
+          .content{
+                   padding-bottom: 30px;
+                   .vid{
+                        iframe{
+                               left: 2.5%;
+                               }
+                        }
+                   .team{
+                         img{
+                             width: 100%;
+                            }
+                        }
+                   .button{
+                           button{
+                                  left: 35%;
+                                 }
+                          }
+                   .footer{
+                            .col-lg-6{
+                                      padding-left: 70px;
+                                      form{
+                                           padding-left: 0;
+                                           }
+                                      }
+                          }
+                  }
+        }
+}
+
+@media(min-width: 1250px){
+
+}

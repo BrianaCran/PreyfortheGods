@@ -4,6 +4,7 @@
 @import "partials/nav";
 @import "partials/header";
 @import "partials/content";
+@import "partials/studio";
 @import "partials/footer";
 
 body{
@@ -32,3 +33,4 @@ body{
     }
 
 @import "partials/mediaQ";
+@import "partials/studioMediaQ";

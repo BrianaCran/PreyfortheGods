@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AACQ,YAAI;EACE,UAAU,EAAE,IAAI;EAEjB,mBAAM;IACC,KAAK,EAAE,KAAK;IACZ,UAAU,EAAE,KAAK;IACjB,qBAAC;MACC,WAAW,EAAE,GAAG;MAChB,OAAO,EAAE,YAAY;AAInC,gBAAQ;EACE,MAAM,EAAE,IAAI",
+"sources": ["studio.scss"],
+"names": [],
+"file": "studio.css"
+}

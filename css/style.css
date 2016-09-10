@@ -603,6 +603,82 @@ textarea {
     .checkout .formbox .payment .option2 {
       display: none; }
 
+.studio {
+  background: #a5ceeb; }
+  .studio h1, .studio h2, .studio h4 {
+    background: none;
+    font-weight: bold;
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+    text-indent: 0;
+    padding-top: 0; }
+  .studio .nav {
+    background: black;
+    padding-top: 5px; }
+    .studio .nav ul {
+      list-style-type: none; }
+      .studio .nav ul li {
+        display: inline-block;
+        width: 33%;
+        text-align: center; }
+        .studio .nav ul li .mobileLink {
+          display: none; }
+  .studio .content {
+    border: none; }
+    .studio .content h1 {
+      text-align: center; }
+    .studio .content .vid .videobg {
+      background: rgba(128, 128, 128, 0.5);
+      padding: 30px 0px 30px 0px; }
+    .studio .content .vid iframe {
+      border: 0;
+      left: 12%; }
+    .studio .content .vid p {
+      text-indent: 0; }
+    .studio .content .team {
+      background: rgba(255, 255, 255, 0.5);
+      text-align: center;
+      padding-bottom: 20px; }
+    .studio .content h2 {
+      color: black; }
+    .studio .content .button {
+      background: rgba(128, 128, 128, 0.5);
+      padding: 30px 0px 30px 0px; }
+      .studio .content .button img {
+        width: 95%;
+        position: relative;
+        left: 2.5%; }
+      .studio .content .button button {
+        font-family: 'Open Sans', sans-serif;
+        color: white; }
+      .studio .content .button h1 {
+        padding: 0; }
+  .studio .footer {
+    background: black; }
+    .studio .footer .fa:hover {
+      color: #a5ceeb; }
+    .studio .footer form p {
+      padding-top: 5px;
+      font-size: 20px;
+      color: #a5ceeb; }
+    .studio .footer form .formLeft {
+      float: left;
+      padding-right: 20px; }
+    .studio .footer form .formRight {
+      float: left; }
+    .studio .footer form .underFloat {
+      clear: both;
+      display: block; }
+    .studio .footer form .button {
+      padding: 10px 10px 10px 10px;
+      font-weight: bold; }
+    .studio .footer form .btnTwo {
+      position: relative;
+      left: 10px; }
+    .studio .footer .copywrite p {
+      padding: 5px 0 0 15%;
+      font-size: 18px; }
+
 .footer {
   background: #7d0000;
   padding: 10px 0 10px 0px; }
@@ -729,6 +805,9 @@ body {
         .checkout .formbox .details .included {
           top: 20px;
           font-size: 18px; }
+        .checkout .formbox .details .mtBold {
+          font-weight: bold;
+          width: 100%; }
       .checkout .formbox .information .button {
         width: 60%; }
       .checkout .formbox .information input[type='text'] {
@@ -837,6 +916,8 @@ body {
         .checkout .formbox .details .included {
           top: 20px;
           font-size: 18px; }
+        .checkout .formbox .details .mtBold {
+          font-weight: bold; }
       .checkout .formbox .information {
         padding-left: 10%; }
         .checkout .formbox .information .button {
@@ -858,15 +939,69 @@ body {
           font-size: 25px;
           padding: 40px 0 0 18%; }
 
-  .footer {
-    padding: 10px 20% 10px 25%; }
-    .footer p {
-      padding: 20px 0px 10px 0px; } }
+  .footer .copywrite p {
+    padding: 20px 0px 10px 0px; } }
 @media (min-width: 1250px) {
   .nav button {
     width: 19.7%; }
 
   .twit {
     padding-left: 8%; } }
+@media (max-width: 767px) {
+  .studio .nav ul {
+    padding-left: 0; }
+    .studio .nav ul li {
+      width: 32%;
+      padding-left: 15px; }
+      .studio .nav ul li .mobileLink {
+        display: inline-block; }
+      .studio .nav ul li .desktopLink {
+        display: none; }
+  .studio .nav .logoImage {
+    padding-top: 10px;
+    width: 100%; }
+  .studio .content {
+    padding: 0px; }
+    .studio .content .vid iframe {
+      left: 4.8%;
+      width: 90%; }
+    .studio .content .team img {
+      padding-top: 10px; }
+    .studio .content .button {
+      padding-left: 20px; }
+      .studio .content .button h2 {
+        padding-left: 60px; }
+      .studio .content .button img {
+        width: 90%; }
+      .studio .content .button button {
+        left: 25%; }
+  .studio .footer {
+    padding-right: 15px; }
+    .studio .footer form {
+      padding: 20px 0 10px 12%; }
+      .studio .footer form p {
+        padding: 5px 0 0 0; }
+      .studio .footer form .formLeft input[type="text"] {
+        width: 118%; }
+      .studio .footer form .formRight input[type="text"] {
+        width: 90%; }
+      .studio .footer form .underFloat textarea, .studio .footer form .underFloat input[type="text"] {
+        width: 77%; } }
+@media (min-width: 769px) and (max-width: 1249px) {
+  .studio .nav .logoImage {
+    width: 50%;
+    padding-top: 5px; }
+  .studio .content {
+    padding-bottom: 30px; }
+    .studio .content .vid iframe {
+      left: 2.5%; }
+    .studio .content .team img {
+      width: 100%; }
+    .studio .content .button button {
+      left: 35%; }
+    .studio .content .footer .col-lg-6 {
+      padding-left: 70px; }
+      .studio .content .footer .col-lg-6 form {
+        padding-left: 0; } }
 
 /*# sourceMappingURL=style.css.map */

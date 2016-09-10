@@ -1,0 +1,108 @@
+.studio{
+         background: $blue;
+         h1,h2,h4{
+               background: none;
+               font-weight: bold;
+               color: black;
+               font-family: 'Open Sans', sans-serif;
+               text-indent: 0;
+               padding-top: 0;
+         }
+        .nav{
+              background: black;
+              padding-top: 5px;
+              ul{
+                 list-style-type: none;
+                  li{
+                     display: inline-block;
+                     width: 33%;
+                     text-align: center;
+                     .mobileLink{
+                                 display: none;
+                     }
+                  }
+              }
+        }
+        .content{
+                  border: none;
+                  h1{
+                     text-align: center;
+                  }
+                  .vid{
+                       .videobg{
+                                background: rgba(128, 128, 128, .5);
+                                padding: 30px 0px 30px 0px;
+                              }
+                       iframe{
+                              border: 0;
+                              left: 12%;
+                            }
+                            p{
+                              text-indent: 0;
+                            }
+                      }
+                  .team{
+                        background: rgba(255, 255, 255, .5);
+                        text-align: center;
+                        padding-bottom: 20px;
+                  }
+                  h2{
+                     color: black;
+                  }
+                  .button{
+                          background: rgba(128, 128, 128, .5);
+                          padding: 30px 0px 30px 0px;
+                          img{
+                              width: 95%;
+                              position: relative;
+                              left: 2.5%;
+                          }
+                          button{
+                                 font-family: 'Open Sans', sans-serif;
+                                 color: white;
+                          }
+                          h1{
+                            padding: 0;
+                          }
+                  }
+                }
+
+       .footer{
+               background: black;
+               .fa:hover{
+                         color: $blue;
+                        }
+
+                form{
+                      p{
+                        padding-top: 5px;
+                        font-size: 20px;
+                        color: $blue;
+                      }
+                      .formLeft{
+                            float: left;
+                            padding-right: 20px;
+                      }
+                      .formRight{
+                                float: left;
+                      }
+                      .underFloat{
+                                  clear: both;
+                                  display: block;
+                      }
+                      .button{
+                              padding: 10px 10px 10px 10px;
+                              font-weight: bold;
+                      }
+                      .btnTwo{
+                              position: relative;
+                              left: 10px;
+                      }
+                    }
+                    .copywrite p{
+                                 padding: 5px 0 0 15%;
+                                 font-size: 18px;
+                    }
+       }
+
+}

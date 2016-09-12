@@ -1,7 +1,10 @@
 .nav{
      background: black;
      border: none;
-     padding: 0;
+     z-index: 200;
+     margin: 0 0 0 0;
+     width: 100%;
+     position: fixed;
 
      .noPadding{
           padding: 0;

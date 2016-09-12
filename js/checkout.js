@@ -8,13 +8,15 @@ $(document).ready(function(){
      $('.p1').show();
      $('#price').html(' $25');
      $('.items').html('<li>Digital Copy of the Game for PC</li>'+'<li>Desktop Backgrounds</li>'+'<li>Elite Grappling Hook</li>');
-
+     $('.itemsB').html(" ");
    $('.execute').click(function(){
      var price = 25;
      var tip = document.getElementById('newValue').value;
      var sum = parseInt(tip, 10) + price;
      document.getElementById('newT').innerHTML = "$" + sum;
    });
+   $('.items').hide();
+   $('.itemsB').hide();
    });
 });
 $(document).ready(function(){
@@ -35,6 +37,8 @@ $(document).ready(function(){
      var sum = parseInt(tip, 10) + price;
      document.getElementById('newT').innerHTML = "$" + sum;
    });
+   $('.items').hide();
+   $('.itemsB').hide();
    });
 });
 $(document).ready(function(){
@@ -55,6 +59,8 @@ $(document).ready(function(){
      var sum = parseInt(tip, 10) + price;
      document.getElementById('newT').innerHTML = "$" + sum;
    });
+   $('.items').hide();
+   $('.itemsB').hide();
    });
 });
 $(document).ready(function(){
@@ -75,6 +81,8 @@ $(document).ready(function(){
      var sum = parseInt(tip, 10) + price;
      document.getElementById('newT').innerHTML = "$" + sum;
    });
+   $('.items').hide();
+   $('.itemsB').hide();
    });
 });
 $(document).ready(function(){
@@ -95,6 +103,8 @@ $(document).ready(function(){
      var sum = parseInt(tip, 10) + price;
      document.getElementById('newT').innerHTML = "$" + sum;
    });
+   $('.items').hide();
+   $('.itemsB').hide();
    });
 });
 $(document).ready(function(){
@@ -115,6 +125,8 @@ $(document).ready(function(){
      var sum = parseInt(tip, 10) + price;
      document.getElementById('newT').innerHTML = "$" + sum;
    });
+     $('.items').hide();
+     $('.itemsB').hide();
    });
 });
 
@@ -134,17 +146,9 @@ $(document).ready(function(details){
 });
 
 $(document).ready(function(){
-  $('.included').click(function() {
-      if ($('.included').hasClass("clicked-once")) {
-  			$('.items').hide();
-        $('.itemsB').hide();
-  			$('.included').removeClass("clicked-once");
-      }
-      else {
-  			$('.included').addClass("clicked-once");
-  			$('.items').show();
-        $('.itemsB').show();
-      }
+  $('.included').click(function(){
+  			$('.items').toggle();
+        $('.itemsB').toggle();
   });
 });
 

@@ -367,7 +367,10 @@ textarea {
 .nav {
   background: black;
   border: none;
-  padding: 0; }
+  z-index: 200;
+  margin: 0 0 0 0;
+  width: 100%;
+  position: fixed; }
   .nav .noPadding {
     padding: 0; }
   .nav button, .nav .drop {
@@ -398,7 +401,8 @@ textarea {
   position: relative;
   background: url("../images/firstlayer.png");
   background-size: 100% 100%;
-  overflow: hidden; }
+  overflow: hidden;
+  margin-top: 50px; }
   .header .second {
     width: 25%;
     left: 37%;
@@ -560,7 +564,7 @@ textarea {
       position: relative;
       position: relative;
       top: 49px; }
-    .checkout .formbox .details ul {
+    .checkout .formbox .details ul, .checkout .formbox .details .itemsB {
       clear: both;
       display: none;
       padding-top: 10px;
@@ -747,9 +751,11 @@ body {
     width: 100%;
     border-top: 2px solid black; }
 
-  .header .second {
-    width: 40%;
-    left: 30%; }
+  .header {
+    margin-top: 58px; }
+    .header .second {
+      width: 40%;
+      left: 30%; }
 
   .content {
     padding: .5% 3% 0 3%;
@@ -852,10 +858,13 @@ body {
     padding: 20px 15px 10px 50px; } }
 @media (min-width: 769px) and (max-width: 1249px) {
   body hr {
-    display: block; }
+    display: block;
+    position: relative;
+    top: 40px; }
 
   .nav .logoImage {
-    width: 20%; }
+    width: 20%;
+    padding-top: 12px; }
   .nav button {
     padding: 7px 0 7px 0;
     border: 0; }
@@ -960,9 +969,6 @@ body {
   .footer .copywrite p {
     padding: 20px 0px 10px 80px; } }
 @media (min-width: 1250px) {
-  .nav button {
-    width: 19.7%; }
-
   .twit {
     padding-left: 8%; } }
 @media (max-width: 767px) {

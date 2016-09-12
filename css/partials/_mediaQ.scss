@@ -27,6 +27,7 @@
                         }
                 }
        .header{
+               margin-top: 58px;
                .second{
                        width: 40%;
                        left: 30%;
@@ -191,11 +192,14 @@
   body{
        hr{
           display: block;
+          position: relative;
+          top: 40px;
        }
       }
   .nav{
        .logoImage{
                   width: 20%;
+                  padding-top: 12px;
                  }
           button{
                  padding: 7px 0 7px 0;
@@ -361,11 +365,8 @@
 }
 
 @media(min-width: 1250px){
-      .nav{
-           button{
-                  width: 19.7%;
-           }
-      }
+
+
       .twit{
             padding-left: 8%;
       }

@@ -15,4 +15,5 @@ $(document).ready(function(){
      var sum = parseInt(tip, 10) + price;
      document.getElementById('newT').innerHTML = "$" + sum;
    });
+
 });

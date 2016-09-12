@@ -161,7 +161,7 @@
                      padding-left: 20px;
                      font-size: 16px;
                    }
-                   button,.button{
+                   button,.button,.execute{
                           border-radius: 10px;
                           padding: 10px 20px 10px 20px;
                           font-size: 20px;
@@ -219,17 +219,24 @@
                                  input[type='number'],.moreRight{
                                                        display: none;
                                  }
-                                 .button{
+                                 .button,.execute{
                                          padding-left: 15px;
                                          text-align: center;
                                  }
                                  .moreRight{
                                             float: right;
-                                            padding-right: 140px;
+                                            padding-right: 100px;
                                             font-weight: bold;
                                  }
                                  .fa-gift{
                                           top: 1px;
+                                 }
+                                 .execute{
+                                          cursor: pointer;
+                                          display: none;
+                                          width: 20%;
+                                          position: relative;
+                                          left: 20px;
                                  }
 
                     }

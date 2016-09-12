@@ -1,30 +1,26 @@
-$(document).ready(function(){
 
+$(document).ready(function(){
+  $('.TA').click(function(){
      $('.buying').hide();
-     $('.buyingB').show();
+     $('.buyingA').show();
      $('#title').html("Backer Plus");
      $('.nextI').hide();
      $('.p1').show();
      $('#price').html(' $25');
      $('.items').html('<li>Digital Copy of the Game for PC</li>'+'<li>Desktop Backgrounds</li>'+'<li>Elite Grappling Hook</li>');
 
-});
-
-$(document).ready(function(){
-  $('.TB').click(function(){
-     $('.buying').hide();
-     $('.buyingB').show();
-     $('#title').html("Backer Plus");
-     $('.nextI').hide();
-     $('.p1').show();
-     $('#price').html(' $25');
-     $('.items').html('<li>Digital Copy of the Game for PC</li>'+'<li>Desktop Backgrounds</li>'+'<li>Elite Grappling Hook</li>');
+   $('.execute').click(function(){
+     var price = 25;
+     var tip = document.getElementById('newValue').value;
+     var sum = parseInt(tip, 10) + price;
+     document.getElementById('newT').innerHTML = "$" + sum;
+   });
    });
 });
 $(document).ready(function(){
-   $('.TC').click(function(){
+   $('.TB').click(function(){
      $('.buying').hide();
-     $('.buyingC').show();
+     $('.buyingB').show();
      $('#title').html("Backer Deluxe");
      $('.additionalI').hide();
      $('.nextI').hide();
@@ -32,12 +28,19 @@ $(document).ready(function(){
      $('#price').html(' $35');
      $('.items').html('<li>Digital Copy of the Game for PC or Console</li>'+'<li>Original Soundtrack Digital Download</li>'+'<li>Digital Art Book</li>'+'<li>Desktop Backgrounds</li>'+'<li>Elite Grappling Hook</li>'+'<li>Name listed under Backer in Credits</li>');
      $('.itemsB').hide();
+
+   $('.execute').click(function(){
+     var price = 35;
+     var tip = document.getElementById('newValue').value;
+     var sum = parseInt(tip, 10) + price;
+     document.getElementById('newT').innerHTML = "$" + sum;
+   });
    });
 });
 $(document).ready(function(){
-   $('.TD').click(function(){
+   $('.TC').click(function(){
      $('.buying').hide();
-     $('.buyingD').show();
+     $('.buyingC').show();
      $('#title').html("Legion Edition");
      $('.additionalI').hide();
      $('.nextI').hide();
@@ -45,12 +48,19 @@ $(document).ready(function(){
      $('#price').html(' $50');
      $('.items').html('<li>Digital Copy of the Game for PC or Console</li>'+'<li>Beta Access</li>'+'<li>Elite Avatar Skin</li>'+'<li>Original Soundtrack Digital Download</li>');
      $('.itemsB').html('<li>Digital Art Book</li>'+'<li>Desktop Backgrounds</li>' + '<li>Elite Grappling Hook</li>'+'<li>Name listed under Elite in Credits</li>');
+
+   $('.execute').click(function(){
+     var price = 50;
+     var tip = document.getElementById('newValue').value;
+     var sum = parseInt(tip, 10) + price;
+     document.getElementById('newT').innerHTML = "$" + sum;
+   });
    });
 });
 $(document).ready(function(){
-   $('.TE').click(function(){
+   $('.TD').click(function(){
      $('.buying').hide();
-     $('.buyingE').show();
+     $('.buyingD').show();
      $('#title').html("Explorer Edition");
      $('.additionalI').hide();
      $('.nextI').hide();
@@ -58,12 +68,19 @@ $(document).ready(function(){
      $('#price').html(' $75');
      $('.items').html('<li>Digital Copy of the Game for PC or Console</li>'+'<li>Beta Access</li>'+'<li>Digital Map of the Game</li>'+ '<li>Elite In Game Pouch</li>'+'<li>Elite Avatar Skin</li>');
      $('.itemsB').html('<li>Original Soundtrack Digital Download</li>'+'<li>Digital Art Book</li>'+'<li>Desktop Backgrounds</li>' + '<li>Elite Grappling Hook</li>'+'<li>Name listed under Elite in Credits</li>');
+
+   $('.execute').click(function(){
+     var price = 75;
+     var tip = document.getElementById('newValue').value;
+     var sum = parseInt(tip, 10) + price;
+     document.getElementById('newT').innerHTML = "$" + sum;
+   });
    });
 });
 $(document).ready(function(){
-   $('.TF').click(function(){
+   $('.TE').click(function(){
      $('.buying').hide();
-     $('.buyingF').show();
+     $('.buyingE').show();
      $('#title').html("Wolf Edition");
      $('.additionalI').hide();
      $('.nextI').hide();
@@ -71,12 +88,19 @@ $(document).ready(function(){
      $('#price').html(' $100');
      $('.items').html('<li>Digital Copy of the Game for PC or Console</li>'+'<li>Beta Access</li>'+'<li>Digital Map of the Game</li>'+ '<li>Elite Wolf Skin</li>'+ '<li>Avatar Wolf "Outfit"</li>'+ '<li>Elite In Game Pouch</li>');
      $('.itemsB').html('<li>Elite Avatar Skin</li>'+'<li>Original Soundtrack Digital Download</li>'+'<li>Digital Art Book</li>'+'<li>Desktop Backgrounds</li>' + '<li>Elite Grappling Hook</li>'+'<li>Name listed under Elite in Credits</li>');
+
+   $('.execute').click(function(){
+     var price = 100;
+     var tip = document.getElementById('newValue').value;
+     var sum = parseInt(tip, 10) + price;
+     document.getElementById('newT').innerHTML = "$" + sum;
+   });
    });
 });
 $(document).ready(function(){
-   $('.TG').click(function(){
+   $('.TF').click(function(){
      $('.buying').hide();
-     $('.buyingG').show();
+     $('.buyingF').show();
      $('#title').html("Digital Only Edition");
      $('.additionalI').hide();
      $('.nextI').hide();
@@ -84,10 +108,17 @@ $(document).ready(function(){
      $('#price').html(' $150');
      $('.items').html('<li>Digital Copy of the Game for PC or Console</li>'+'<li>Raven Outfit</li>'+'<li>Raven Pet</li>'+'<li>Overlord Outfit</li>'+'<li>Overlord Pet</li>'+'<li>Beta Access</li>'+'<li>Digital Map of the Game</li>'+ '<li>Elite Wolf Skin</li>');
      $('.itemsB').html('<li>Avatar Wolf "Outfit"</li>'+ '<li>Elite In Game Pouch</li>'+'<li>Elite Avatar Skin</li>'+'<li>Original Soundtrack Digital Download</li>'+'<li>Digital Art Book</li>'+'<li>Desktop Backgrounds</li>' + '<li>Elite Grappling Hook</li>'+'<li>Name listed under Elite in Credits</li>');
+
+   $('.execute').click(function(){
+     var price = 150;
+     var tip = document.getElementById('newValue').value;
+     var sum = parseInt(tip, 10) + price;
+     document.getElementById('newT').innerHTML = "$" + sum;
+   });
    });
 });
 
-$(document).ready(function(){
+$(document).ready(function(details){
   $('.options').click(function() {
       if ($('.options').hasClass("clicked-once")) {
   			$('.option2').hide();
@@ -118,11 +149,11 @@ $(document).ready(function(){
 });
 
 
-$(document).ready(function(){
+$(document).ready(function(tip){
   $('.tip .button').click(function() {
       $('.tip .button').hide();
       $('.generous').show()
       $('.moreRight').show();
-
+      $('.execute').show();
       });
 });

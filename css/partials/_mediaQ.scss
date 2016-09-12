@@ -161,7 +161,6 @@
                                                         left: 20px;
                                                }
                                              }
-                                        .tip{padding-left: 25%;}
                                   .payment{
                                            padding: 20px 0 80px 20%;
                                            .mobileV{
@@ -337,7 +336,12 @@
                                                      left: 20px;
                                             }
                                           }
-                                     .tip{padding-left: 30%;}
+                                     .tip{
+                                          padding-left: 20%;
+                                          .moreRight{
+                                                     float: left;
+                                          }
+                                          }
                                .payment{
                                         padding: 20px 0 80px 18%;
 

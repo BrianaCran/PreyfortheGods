@@ -1,23 +1,25 @@
 .content{
          position: relative;
+         margin-top: 50px;
          padding: 50px 0px 50px 0px;
          @include desktopBorder;
 
          h1{
             background: $red;
             color: $blue;
-            padding: 10px 0px 10px 0;
             text-indent: 50px;
             font-size: 40px;
+           }
+           h1,p{
+               padding: 10px 0px 10px 0;
            }
          p{
            font-size: 20px;
            line-height: 35px;
-           padding: 10px 0 10px 0;
           }
-    iframe,.intro,.introphoto{
-                              border: 2px solid $red;
-                              position: relative;
+    iframe,.intro,.introPhoto,.media img,.subH,.hborder{
+                                                        border: 2px solid $red;
+                                                        position: relative;
           }
     iframe{
            left: 18%;
@@ -25,14 +27,13 @@
     .intro{
            left: 23%;
           }
-    .introphoto{
+    .introPhoto{
                 width: 70%;
                 left: 15%;
               }
     .tiers{
-          font-weight: bold;
           font-size: 16px;
-          cursor: pointer;
+          @include cursor;
     }
     .tierExplanation{
                      display: none;
@@ -41,12 +42,10 @@
           .twoCol{
                   padding: 20px 0 0 0px;
                   a{
-                    outline: none;
                     padding-left: 10px;
-                  }
+                   }
                 img{
                     width: 95%;
-                    border: 2px solid $red;
                    }
                  }
           }
@@ -59,7 +58,6 @@
              }
            button{
                   background: black;
-                  font-family: 'Finger Paint', cursive;
                   color: $blue;
                   font-size: 30px;
                   padding: 5px 20px 5px 20px;
@@ -69,13 +67,9 @@
          }
 }
 .faq{
-     span{
-          font-weight: bold;
-     }
      p{
       width: 90%;
       padding-left: 6%;
-      text-indent: 0;
      }
      h3{
         border: 2px solid $red;
@@ -85,7 +79,6 @@
 .presskit{
           .subH,.hborder{
                           background: none;
-                          border: 2px solid $red;
                           color: white;
                   }
           .hborder{
@@ -107,79 +100,58 @@
              p{
                width: 100%;
                font-size: 16px;
-               text-indent: 0;
              }
           }
           iframe{
-                 width: 100%;
-                 left: 0;
+                 top: 20px;
                 }
-          .logo{
-                img{
-                    width: 80%;
-                    padding-left: 15%;
-                    }
-                  }
           .empty{
                  padding: 35px;
           }
 }
 .checkout{
-          .buying{
-                  left: 18%;
-                  position: relative;
-                  width: 62%;
-                 }
-          .unseen{
-                   display: none;
-          }
-          .nextI{
-                 display: none;
-          }
-                 .thumbnail{
-                            width: 10%;
-                            display: inline-block;
-                            padding: 0;
-                            border-radius: 0;
-                            border: none;
-                            position: relative;
-                            left: 18%;
+          .unseen,.nextI,.information input[type='number'],
+          .information .moreRight,.information .execute,.payment .option2{
+                                                        display: none;
+                                                       }
+                 .thumbnails{
+                             width: 10%;
+                             @include cursor;
+                             left: 18%;
                  }
           .formbox{
                    clear: both;
                    background: rgba(255,255,255,.5);
-                   padding: 20px 0px 10px 0px;
+                   padding: 0px 0px 10px 0px;
                    width: 80%;
                    position: relative;
                    left: 10%;
-                   #title{
-                          display: inline-block;
-                   }
-
+                   #title,p,.details .items, .details .itemsB{
+                                                              display: inline-block;
+                                                             }
                    p{
-                     display: inline-block;
                      padding-left: 20px;
                      font-size: 16px;
                    }
                    button,.button,.execute{
-                          border-radius: 10px;
-                          padding: 10px 20px 10px 20px;
-                          font-size: 20px;
-                          background: black;
-                          color: $blue;
+                                            border-radius: 10px;
+                                            padding: 10px 20px 10px 20px;
+                                            font-size: 20px;
+                                            background: black;
+                                            color: $blue;
                    }
                    button:hover{
                                 color: white;
-
                    }
                    .fa{
                        padding-left: 10px;
                        font-size: 20px;
                    }
+                   .details,.information,.payment{
+                                                  padding: 15px 0px 15px 40px;
+                   }
                    .details{
-                            padding:0 0 15px 40px;
                             .bolder{
-                                    font-weight: bold;
                                     font-size: 25px;
                             }
                             img{
@@ -189,26 +161,19 @@
                                      @include clickDecor;
                                      position: relative;
                                      top: 49px;
-
                                }
-                           ul,.itemsB{    clear: both;
-                                  display: none;
-                                  padding-top: 10px;
-                                  font-weight: bold;
-                                  display: inline-block;
+                           ul{
+                              clear: both;
+                              padding-top: 10px;
+                              display: none;
                              }
                             .items{
                                     float: left;
-                                    display: none;
                             }
                     }
                     .information{
                                  clear: both;
                                  border-top: 2px solid black;
-                                 padding: 15px 0px 15px 40px;
-                                 p{
-                                   padding: 0px 20px 0px 0px;
-                                 }
                                  input{
                                        padding: 5px;
                                  }
@@ -216,42 +181,29 @@
                                                          position: relative;
                                                          left: 24.5%;
                                  }
-                                 input[type='number'],.moreRight{
-                                                       display: none;
-                                 }
                                  .button,.execute{
-                                         padding-left: 15px;
-                                         text-align: center;
+                                                  padding-left: 15px;
+                                                  text-align: center;
+                                                  @include cursor;
+                                                  left: 20px;
                                  }
                                  .moreRight{
                                             float: right;
                                             padding-right: 100px;
-                                            font-weight: bold;
                                  }
                                  .fa-gift{
                                           top: 1px;
                                  }
                                  .execute{
-                                          cursor: pointer;
-                                          display: none;
                                           width: 20%;
-                                          position: relative;
-                                          left: 20px;
                                  }
-
                     }
                     .payment{
-                              padding: 10px 0px 15px 40px;
                              .options{
                                       @include clickDecor;
                                       float: right;
                                       padding-right: 8%;
                              }
-                             .option2{
-                                      display: none;
-                             }
                     }
-
-
           }
 }

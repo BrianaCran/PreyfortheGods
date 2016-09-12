@@ -11,26 +11,25 @@ body{
      font-family: 'Open Sans', sans-serif;
      background: url('../images/bg.jpg');
      background-size: cover;
+    }
     .container-fluid{
-                     padding-left: 0;
-                     padding-right: 0;
+                     padding: 0;
                      overflow-x: hidden;
                     }
-     h1,h2{
-           font-family: 'Finger Paint', cursive;
-          }
-     h3{
-        font-weight: bold;
-       }
+     h1,h2,.button button{
+                          font-family: 'Finger Paint', cursive;
+                         }
+     h3,.tiers,.faq span,.moreRight,.bolder,.details ul{
+                                     font-weight: bold;
+        }
      hr{
         @include tabMobBroder;
         display: none;
        }
-     button{
+     button,.nav,.media a,.presskit .introphoto{
             border: none;
             outline: none;
      }
-    }
 
 @import "partials/mediaQ";
 @import "partials/studioMediaQ";

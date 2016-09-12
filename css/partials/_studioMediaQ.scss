@@ -12,41 +12,39 @@
                       .desktopLink{
                                    display: none;
                                   }
+                      .logoImage{
+                                 width: 100%;
+                                 padding-top: 10px;
+                      }
                      }
                    }
-                  .logoImage{
-                             padding-top: 10px;
-                             width: 100%;
-                            }
               }
            .content{
-                    padding: 0px;
                     .vid{
                          iframe{
                                 left: 4.8%;
                                 width: 90%;
                                }
-                        }
+                         }
                     .team{
                           img{
                               padding-top: 10px;
                              }
                          }
                     .button{
-                            padding-left: 20px;
                             h2{
                                padding-left: 60px;
                               }
                             img{
-                                width: 90%;
+                                width: 95%;
                                }
-                            button{
-                                    left: 25%;
-                                  }
+                              button{
+                                 left: 20%;
+                              }
                             }
                    }
          .footer{
-           padding-right: 15px;
+                 padding-right: 15px;
                  form{
                       padding: 20px 0 10px 12%;
                       p{
@@ -73,7 +71,6 @@
 }
 
 @media (min-width: 769px)and(max-width: 1249px){
-
   .studio{
           .nav{
                 .logoImage{
@@ -93,11 +90,6 @@
                              width: 100%;
                             }
                         }
-                   .button{
-                           button{
-                                  left: 35%;
-                                 }
-                          }
                    .footer{
                             .col-lg-6{
                                       padding-left: 70px;
@@ -108,8 +100,4 @@
                           }
                   }
         }
-}
-
-@media(min-width: 1250px){
-
 }

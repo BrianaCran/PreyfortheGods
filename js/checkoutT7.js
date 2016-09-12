@@ -1,5 +1,5 @@
 $(document).ready(function(){
-     $('.buying').hide();
+     $('.introphoto').hide();
      $('.buyingF').show();
      $('#title').html("Digital Only Edition");
      $('.additionalI').hide();

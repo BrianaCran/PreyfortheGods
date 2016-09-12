@@ -1,7 +1,7 @@
 
 $(document).ready(function(){
   $('.TA').click(function(){
-     $('.buying').hide();
+     $('.introphoto').hide();
      $('.buyingA').show();
      $('#title').html("Backer Plus");
      $('.nextI').hide();
@@ -21,7 +21,7 @@ $(document).ready(function(){
 });
 $(document).ready(function(){
    $('.TB').click(function(){
-     $('.buying').hide();
+     $('.introphoto').hide();
      $('.buyingB').show();
      $('#title').html("Backer Deluxe");
      $('.additionalI').hide();
@@ -43,7 +43,7 @@ $(document).ready(function(){
 });
 $(document).ready(function(){
    $('.TC').click(function(){
-     $('.buying').hide();
+     $('.introphoto').hide();
      $('.buyingC').show();
      $('#title').html("Legion Edition");
      $('.additionalI').hide();
@@ -65,7 +65,7 @@ $(document).ready(function(){
 });
 $(document).ready(function(){
    $('.TD').click(function(){
-     $('.buying').hide();
+     $('.introphoto').hide();
      $('.buyingD').show();
      $('#title').html("Explorer Edition");
      $('.additionalI').hide();
@@ -87,7 +87,7 @@ $(document).ready(function(){
 });
 $(document).ready(function(){
    $('.TE').click(function(){
-     $('.buying').hide();
+     $('.introphoto').hide();
      $('.buyingE').show();
      $('#title').html("Wolf Edition");
      $('.additionalI').hide();
@@ -109,7 +109,7 @@ $(document).ready(function(){
 });
 $(document).ready(function(){
    $('.TF').click(function(){
-     $('.buying').hide();
+     $('.introphoto').hide();
      $('.buyingF').show();
      $('#title').html("Digital Only Edition");
      $('.additionalI').hide();

@@ -1,5 +1,5 @@
 $(document).ready(function(){
-     $('.buying').hide();
+     $('.introphoto').hide();
      $('.buyingB').show();
      $('#title').html("Backer Deluxe");
      $('.additionalI').hide();

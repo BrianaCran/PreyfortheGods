@@ -366,16 +366,15 @@ textarea {
 
 .nav {
   background: black;
-  border: none;
   z-index: 200;
-  margin: 0 0 0 0;
+  margin: 0;
   width: 100%;
   position: fixed; }
   .nav .noPadding {
     padding: 0; }
   .nav button, .nav .drop {
     background: #7d0000;
-    padding: 12px 0px 5px 2px;
+    padding: 12px 0px 2px 2px;
     display: inline-block;
     text-transform: uppercase;
     width: 19.79%; }
@@ -415,6 +414,7 @@ textarea {
 
 .content {
   position: relative;
+  margin-top: 50px;
   padding: 50px 0px 50px 0px;
   border: 2px solid #7d0000;
   border-width: 39px 0px 61px;
@@ -425,37 +425,35 @@ textarea {
   .content h1 {
     background: #7d0000;
     color: #a5ceeb;
-    padding: 10px 0px 10px 0;
     text-indent: 50px;
     font-size: 40px; }
+  .content h1, .content p {
+    padding: 10px 0px 10px 0; }
   .content p {
     font-size: 20px;
-    line-height: 35px;
-    padding: 10px 0 10px 0; }
-  .content iframe, .content .intro, .content .introphoto {
+    line-height: 35px; }
+  .content iframe, .content .intro, .content .introPhoto, .content .media img, .content .subH, .content .hborder {
     border: 2px solid #7d0000;
     position: relative; }
   .content iframe {
     left: 18%; }
   .content .intro {
     left: 23%; }
-  .content .introphoto {
+  .content .introPhoto {
     width: 70%;
     left: 15%; }
   .content .tiers {
-    font-weight: bold;
     font-size: 16px;
-    cursor: pointer; }
+    cursor: pointer;
+    position: relative; }
   .content .tierExplanation {
     display: none; }
   .content .media .twoCol {
     padding: 20px 0 0 0px; }
     .content .media .twoCol a {
-      outline: none;
       padding-left: 10px; }
     .content .media .twoCol img {
-      width: 95%;
-      border: 2px solid #7d0000; }
+      width: 95%; }
   .content .button {
     padding-top: 20px; }
     .content .button h2 {
@@ -464,26 +462,21 @@ textarea {
       padding-bottom: 20px; }
     .content .button button {
       background: black;
-      font-family: 'Finger Paint', cursive;
       color: #a5ceeb;
       font-size: 30px;
       padding: 5px 20px 5px 20px;
       position: relative;
       left: 40%; }
 
-.faq span {
-  font-weight: bold; }
 .faq p {
   width: 90%;
-  padding-left: 6%;
-  text-indent: 0; }
+  padding-left: 6%; }
 .faq h3 {
   border: 2px solid #7d0000;
   padding: 5px; }
 
 .presskit .subH, .presskit .hborder {
   background: none;
-  border: 2px solid #7d0000;
   color: white; }
 .presskit .hborder {
   padding: 8px; }
@@ -499,44 +492,30 @@ textarea {
     font-size: 20px; }
   .presskit ul p {
     width: 100%;
-    font-size: 16px;
-    text-indent: 0; }
+    font-size: 16px; }
 .presskit iframe {
-  width: 100%;
-  left: 0; }
-.presskit .logo img {
-  width: 80%;
-  padding-left: 15%; }
+  top: 20px; }
 .presskit .empty {
   padding: 35px; }
 
-.checkout .buying {
-  left: 18%;
-  position: relative;
-  width: 62%; }
-.checkout .unseen {
+.checkout .unseen, .checkout .nextI, .checkout .information input[type='number'],
+.checkout .information .moreRight, .checkout .information .execute, .checkout .payment .option2 {
   display: none; }
-.checkout .nextI {
-  display: none; }
-.checkout .thumbnail {
+.checkout .thumbnails {
   width: 10%;
-  display: inline-block;
-  padding: 0;
-  border-radius: 0;
-  border: none;
+  cursor: pointer;
   position: relative;
   left: 18%; }
 .checkout .formbox {
   clear: both;
   background: rgba(255, 255, 255, 0.5);
-  padding: 20px 0px 10px 0px;
+  padding: 0px 0px 10px 0px;
   width: 80%;
   position: relative;
   left: 10%; }
-  .checkout .formbox #title {
+  .checkout .formbox #title, .checkout .formbox p, .checkout .formbox .details .items, .checkout .formbox .details .itemsB {
     display: inline-block; }
   .checkout .formbox p {
-    display: inline-block;
     padding-left: 20px;
     font-size: 16px; }
   .checkout .formbox button, .checkout .formbox .button, .checkout .formbox .execute {
@@ -550,78 +529,65 @@ textarea {
   .checkout .formbox .fa {
     padding-left: 10px;
     font-size: 20px; }
-  .checkout .formbox .details {
-    padding: 0 0 15px 40px; }
-    .checkout .formbox .details .bolder {
-      font-weight: bold;
-      font-size: 25px; }
-    .checkout .formbox .details img {
-      width: 30%; }
-    .checkout .formbox .details .included {
-      font-size: 14px;
-      cursor: pointer;
-      text-decoration: underline;
-      position: relative;
-      position: relative;
-      top: 49px; }
-    .checkout .formbox .details ul, .checkout .formbox .details .itemsB {
-      clear: both;
-      display: none;
-      padding-top: 10px;
-      font-weight: bold;
-      display: inline-block; }
-    .checkout .formbox .details .items {
-      float: left;
-      display: none; }
+  .checkout .formbox .details, .checkout .formbox .information, .checkout .formbox .payment {
+    padding: 15px 0px 15px 40px; }
+  .checkout .formbox .details .bolder {
+    font-size: 25px; }
+  .checkout .formbox .details img {
+    width: 30%; }
+  .checkout .formbox .details .included {
+    font-size: 14px;
+    cursor: pointer;
+    text-decoration: underline;
+    position: relative;
+    position: relative;
+    top: 49px; }
+  .checkout .formbox .details ul {
+    clear: both;
+    padding-top: 10px;
+    display: none; }
+  .checkout .formbox .details .items {
+    float: left; }
   .checkout .formbox .information {
     clear: both;
-    border-top: 2px solid black;
-    padding: 15px 0px 15px 40px; }
-    .checkout .formbox .information p {
-      padding: 0px 20px 0px 0px; }
+    border-top: 2px solid black; }
     .checkout .formbox .information input {
       padding: 5px; }
     .checkout .formbox .information input[type='checkbox'], .checkout .formbox .information .fa-gift {
       position: relative;
       left: 24.5%; }
-    .checkout .formbox .information input[type='number'], .checkout .formbox .information .moreRight {
-      display: none; }
     .checkout .formbox .information .button, .checkout .formbox .information .execute {
       padding-left: 15px;
-      text-align: center; }
+      text-align: center;
+      cursor: pointer;
+      position: relative;
+      left: 20px; }
     .checkout .formbox .information .moreRight {
       float: right;
-      padding-right: 100px;
-      font-weight: bold; }
+      padding-right: 100px; }
     .checkout .formbox .information .fa-gift {
       top: 1px; }
     .checkout .formbox .information .execute {
-      cursor: pointer;
-      display: none;
-      width: 20%;
-      position: relative;
-      left: 20px; }
-  .checkout .formbox .payment {
-    padding: 10px 0px 15px 40px; }
-    .checkout .formbox .payment .options {
-      font-size: 14px;
-      cursor: pointer;
-      text-decoration: underline;
-      position: relative;
-      float: right;
-      padding-right: 8%; }
-    .checkout .formbox .payment .option2 {
-      display: none; }
+      width: 20%; }
+  .checkout .formbox .payment .options {
+    font-size: 14px;
+    cursor: pointer;
+    text-decoration: underline;
+    position: relative;
+    float: right;
+    padding-right: 8%; }
 
 .studio {
   background: #a5ceeb; }
-  .studio h1, .studio h2, .studio h4 {
+  .studio h1, .studio h2, .studio h4, .studio .content h2 {
     background: none;
     font-weight: bold;
     color: black;
     font-family: 'Open Sans', sans-serif;
     text-indent: 0;
     padding-top: 0; }
+  .studio .content h1, .studio .team, .studio .nav li {
+    text-align: center; }
   .studio .nav {
     background: black;
     padding-top: 5px; }
@@ -629,43 +595,36 @@ textarea {
       list-style-type: none; }
       .studio .nav ul li {
         display: inline-block;
-        width: 33%;
-        text-align: center; }
+        width: 33%; }
+        .studio .nav ul li a {
+          width: 100%; }
         .studio .nav ul li .mobileLink {
           display: none; }
         .studio .nav ul li .logoImage {
           width: 40%;
           padding-top: 5px; }
   .studio .content {
-    border: none; }
-    .studio .content h1 {
-      text-align: center; }
-    .studio .content .vid .videobg {
-      background: rgba(128, 128, 128, 0.5);
+    border: none;
+    padding-top: 100px; }
+    .studio .content .vid .videobg, .studio .content .button {
       padding: 30px 0px 30px 0px; }
+    .studio .content .vid .videobg, .studio .content .button {
+      background: rgba(128, 128, 128, 0.5); }
     .studio .content .vid iframe {
       border: 0;
       left: 12%; }
-    .studio .content .vid p {
-      text-indent: 0; }
     .studio .content .team {
       background: rgba(255, 255, 255, 0.5);
-      text-align: center;
       padding-bottom: 20px; }
-    .studio .content h2 {
-      color: black; }
-    .studio .content .button {
-      background: rgba(128, 128, 128, 0.5);
-      padding: 30px 0px 30px 0px; }
-      .studio .content .button img {
-        width: 95%;
-        position: relative;
-        left: 2.5%; }
-      .studio .content .button button {
-        font-family: 'Open Sans', sans-serif;
-        color: white; }
-      .studio .content .button h1 {
-        padding: 0; }
+    .studio .content .button img {
+      width: 95%;
+      position: relative;
+      left: 2.5%; }
+    .studio .content .button button {
+      font-family: 'Open Sans', sans-serif;
+      color: white; }
+    .studio .content .button h1 {
+      padding: 0; }
   .studio .footer {
     background: black; }
     .studio .footer .fa:hover {
@@ -683,26 +642,22 @@ textarea {
       clear: both;
       display: block; }
     .studio .footer form .button {
-      padding: 10px 10px 10px 10px;
+      padding: 10px;
       font-weight: bold; }
     .studio .footer form .btnTwo {
       position: relative;
       left: 10px; }
-    .studio .footer .copywrite p {
-      padding: 5px 0 0 15%;
-      font-size: 18px; }
 
 .footer {
   background: #7d0000;
   padding: 10px 0 10px 0px; }
-  .footer .fa {
+  .footer .fa, .footer p {
     font-size: 40px;
     color: white;
-    padding: 5px 0 0 10%; }
+    padding: 5px 0 0 8%; }
   .footer .fa:hover {
     color: black; }
   .footer p {
-    color: white;
     font-size: 12px;
     padding-top: 20px; }
 
@@ -710,29 +665,35 @@ body {
   font-family: 'Open Sans', sans-serif;
   background: url("../images/bg.jpg");
   background-size: cover; }
-  body .container-fluid {
-    padding-left: 0;
-    padding-right: 0;
-    overflow-x: hidden; }
-  body h1, body h2 {
-    font-family: 'Finger Paint', cursive; }
-  body h3 {
-    font-weight: bold; }
-  body hr {
-    border-style: solid;
-    border-width: 33px 0px 0px;
-    -moz-border-image: url(../images/breakline.svg) 25 27 0 0 stretch;
-    -webkit-border-image: url(../images/breakline.svg) 25 27 0 0 stretch;
-    -o-border-image: url(../images/breakline.svg) 25 27 0 0 stretch;
-    border-image: url(../images/breakline.svg) 25 27 0 0 fill stretch;
-    display: none; }
-  body button {
-    border: none;
-    outline: none; }
+
+.container-fluid {
+  padding: 0;
+  overflow-x: hidden; }
+
+h1, h2, .button button {
+  font-family: 'Finger Paint', cursive; }
+
+h3, .tiers, .faq span, .moreRight, .bolder, .details ul {
+  font-weight: bold; }
+
+hr {
+  border-style: solid;
+  border-width: 33px 0px 0px;
+  -moz-border-image: url(../images/breakline.svg) 25 27 0 0 stretch;
+  -webkit-border-image: url(../images/breakline.svg) 25 27 0 0 stretch;
+  -o-border-image: url(../images/breakline.svg) 25 27 0 0 stretch;
+  border-image: url(../images/breakline.svg) 25 27 0 0 fill stretch;
+  display: none; }
+
+button, .nav, .media a, .presskit .introphoto {
+  border: none;
+  outline: none; }
 
 @media (max-width: 767px) {
   body hr {
-    display: block; }
+    display: block;
+    position: relative;
+    top: 40px; }
 
   .nav .logoImage {
     width: 49%;
@@ -759,24 +720,20 @@ body {
 
   .content {
     padding: .5% 3% 0 3%;
-    border: none; }
+    border: none;
+    margin-top: 0; }
     .content h1 {
       padding: 10px 0px 10px 0;
       text-indent: 0px;
       text-align: center; }
-    .content iframe, .content .intro, .content .introphoto {
+    .content iframe, .content .intro, .content .introPhoto, .content p, .content .media img, .content .checkout .formbox {
       left: 0px;
       width: 100%; }
     .content p {
-      width: 100%;
       padding-left: 10px; }
     .content .twit {
       padding-left: 3.6%;
       padding-right: 4.5%; }
-    .content .media .twoCol a {
-      padding-left: 0; }
-      .content .media .twoCol a img {
-        width: 100%; }
     .content .button {
       padding: 10px 0 40px 10%; }
       .content .button h2 {
@@ -786,73 +743,57 @@ body {
 
   .presskit h2 {
     text-align: center; }
-  .presskit iframe {
-    width: 100%;
-    height: 300px; }
   .presskit ul {
     padding-left: 10%; }
     .presskit ul p {
       font-size: 20px; }
-  .presskit .logo img {
-    width: 100%;
-    padding-left: 0; }
-  .presskit .thanks p {
-    text-indent: 0; }
   .presskit .linkspace {
     font-size: 20px;
     line-height: 40px; }
+  .presskit .logo .introPhoto {
+    border: none; }
+  .presskit .notTablet {
+    top: 0; }
 
   .checkout {
     padding-bottom: 50px; }
-    .checkout .buying, .checkout .thumbnail {
-      width: 100%;
-      left: 0; }
     .checkout .thumbnail {
       width: 25%;
       margin-left: 5%; }
-    .checkout .formbox {
-      width: 100%;
-      left: 0; }
-      .checkout .formbox p {
-        text-align: left;
-        padding-left: 0; }
-      .checkout .formbox .details {
-        padding: 0 0 0px 30px; }
-        .checkout .formbox .details img {
-          width: 90%; }
-        .checkout .formbox .details p {
-          font-size: 22px; }
-        .checkout .formbox .details ul {
-          padding-top: 30px; }
-        .checkout .formbox .details .included {
-          top: 20px;
-          font-size: 18px; }
-        .checkout .formbox .details .mtBold {
-          font-weight: bold;
-          width: 100%; }
-      .checkout .formbox .information .button {
-        width: 60%; }
-      .checkout .formbox .information input[type='text'] {
+    .checkout .formbox p, .checkout .formbox .details ul, .checkout .formbox .details .included, .checkout .formbox .payment .options {
+      padding-left: 0;
+      font-size: 22px; }
+    .checkout .formbox .details {
+      padding: 0 0 0px 30px; }
+      .checkout .formbox .details img {
         width: 90%; }
-      .checkout .formbox .information input[type='checkbox'], .checkout .formbox .information .fa-gift {
-        left: .5%;
-        display: block;
+      .checkout .formbox .details ul {
+        padding-top: 30px; }
+      .checkout .formbox .details .included {
         top: 20px; }
-      .checkout .formbox .information .fa-gift {
-        top: 3px;
-        left: 20px; }
-      .checkout .formbox .payment {
-        padding: 20px 0 80px 20%; }
-        .checkout .formbox .payment .mobileV {
-          position: relative;
-          top: 10px; }
-        .checkout .formbox .payment .options {
-          font-size: 25px;
-          padding: 40px 0 0 15px; }
+      .checkout .formbox .details .mtBold {
+        font-weight: bold;
+        width: 100%; }
+    .checkout .formbox .information .button {
+      width: 60%; }
+    .checkout .formbox .information input[type='text'] {
+      width: 90%; }
+    .checkout .formbox .information input[type='checkbox'], .checkout .formbox .information .fa-gift {
+      left: .5%;
+      display: block;
+      top: 20px; }
+    .checkout .formbox .information .fa-gift {
+      top: 3px;
+      left: 20px; }
+    .checkout .formbox .payment {
+      padding: 20px 0 80px 20%; }
+      .checkout .formbox .payment .mobileV {
+        position: relative;
+        top: 10px; }
+      .checkout .formbox .payment .options {
+        padding: 40px 0 0 15px; }
 
   .footer .fa {
-    font-size: 50px;
-    color: white;
     padding: 5px 0 0 12%; }
   .footer .copywrite p {
     padding: 20px 15px 10px 50px; } }
@@ -881,11 +822,9 @@ body {
       font-size: 22px;
       width: 95%;
       padding-left: 10px; }
-    .content iframe, .content .introphoto {
+    .content iframe, .content .introPhoto, .content .hborder, .content .checkout .formbox {
       left: 0;
-      width: 95%;
-      padding: 0;
-      border: none; }
+      width: 95%; }
     .content .intro {
       left: 18%;
       width: 60%; }
@@ -907,64 +846,48 @@ body {
     font-weight: normal;
     padding: 2% 0 2% 6%; }
 
-  .presskit .introphoto, .presskit .hborder {
-    width: 95%; }
   .presskit .notTablet {
     display: none; }
   .presskit ul li {
     padding-left: 20px; }
-    .presskit ul li p, .presskit ul li a {
-      font-size: 20px; }
   .presskit .linkspace a {
     padding: 10px 0 0 10px;
     display: block; }
 
   .checkout {
     padding-bottom: 50px; }
-    .checkout .buying, .checkout .thumbnail {
-      width: 95%;
-      left: 0; }
     .checkout .thumbnail {
       width: 25%;
       margin-left: 5%; }
-    .checkout .formbox {
-      width: 95%;
-      left: 0; }
-      .checkout .formbox .details {
-        padding: 0 0 0px 10%; }
-        .checkout .formbox .details img {
-          width: 90%; }
-        .checkout .formbox .details p {
-          font-size: 22px; }
-        .checkout .formbox .details ul {
-          padding-top: 30px; }
-        .checkout .formbox .details .included {
-          top: 20px;
-          font-size: 18px; }
-        .checkout .formbox .details .mtBold {
-          font-weight: bold; }
-      .checkout .formbox .information {
-        padding-left: 10%; }
-        .checkout .formbox .information .button {
-          width: 60%; }
-        .checkout .formbox .information input[type='text'] {
-          width: 89%; }
-        .checkout .formbox .information input[type='checkbox'], .checkout .formbox .information .fa-gift {
-          left: .5%;
-          display: block;
-          top: 20px; }
-        .checkout .formbox .information .fa-gift {
-          top: 3px;
-          left: 20px; }
-      .checkout .formbox .tip {
-        padding-left: 20%; }
-        .checkout .formbox .tip .moreRight {
-          float: left; }
-      .checkout .formbox .payment {
-        padding: 20px 0 80px 18%; }
-        .checkout .formbox .payment .options {
-          font-size: 25px;
-          padding: 40px 0 0 18%; }
+    .checkout .formbox p, .checkout .formbox .details .included, .checkout .formbox .payment .options {
+      font-size: 22px; }
+    .checkout .formbox .details, .checkout .formbox .information {
+      padding-left: 10%; }
+    .checkout .formbox .details img {
+      width: 90%; }
+    .checkout .formbox .details ul {
+      padding-top: 30px; }
+    .checkout .formbox .details .mtBold {
+      font-weight: bold; }
+    .checkout .formbox .information .button {
+      width: 60%; }
+    .checkout .formbox .information input[type='text'] {
+      width: 89%; }
+    .checkout .formbox .information input[type='checkbox'], .checkout .formbox .information .fa-gift {
+      left: .5%;
+      display: block;
+      top: 20px; }
+    .checkout .formbox .information .fa-gift {
+      top: 3px;
+      left: 20px; }
+    .checkout .formbox .tip {
+      padding-left: 20%; }
+      .checkout .formbox .tip .moreRight {
+        float: left; }
+    .checkout .formbox .payment {
+      padding: 20px 0 80px 18%; }
+      .checkout .formbox .payment .options {
+        padding: 40px 0 0 18%; }
 
   .footer .copywrite p {
     padding: 20px 0px 10px 80px; } }
@@ -981,24 +904,20 @@ body {
         display: inline-block; }
       .studio .nav ul li .desktopLink {
         display: none; }
-  .studio .nav .logoImage {
-    padding-top: 10px;
-    width: 100%; }
-  .studio .content {
-    padding: 0px; }
-    .studio .content .vid iframe {
-      left: 4.8%;
-      width: 90%; }
-    .studio .content .team img {
-      padding-top: 10px; }
-    .studio .content .button {
-      padding-left: 20px; }
-      .studio .content .button h2 {
-        padding-left: 60px; }
-      .studio .content .button img {
-        width: 90%; }
-      .studio .content .button button {
-        left: 25%; }
+      .studio .nav ul li .logoImage {
+        width: 100%;
+        padding-top: 10px; }
+  .studio .content .vid iframe {
+    left: 4.8%;
+    width: 90%; }
+  .studio .content .team img {
+    padding-top: 10px; }
+  .studio .content .button h2 {
+    padding-left: 60px; }
+  .studio .content .button img {
+    width: 95%; }
+  .studio .content .button button {
+    left: 20%; }
   .studio .footer {
     padding-right: 15px; }
     .studio .footer form {
@@ -1021,8 +940,6 @@ body {
       left: 2.5%; }
     .studio .content .team img {
       width: 100%; }
-    .studio .content .button button {
-      left: 35%; }
     .studio .content .footer .col-lg-6 {
       padding-left: 70px; }
       .studio .content .footer .col-lg-6 form {

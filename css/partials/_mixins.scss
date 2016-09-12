@@ -20,3 +20,7 @@
                   text-decoration: underline;
                   position: relative;
                  }
+@mixin cursor{
+              cursor: pointer;
+              position: relative;
+}

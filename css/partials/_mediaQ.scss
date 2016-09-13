@@ -21,6 +21,7 @@
                          top: 3px;
                          left: 15px;
                         }
+
                    .drop{
                          display: none;
                          width: 100%;
@@ -65,19 +66,18 @@
                          }
                          }
                .presskit{
-                          p,.linkspace{
-                            font-size: 20px;
-                           }
                           h2{
                             text-align: center;
                           }
                          ul{
                             padding-left: 10%;
-
-                           }
+                            p,.linkspace{
+                              font-size: 20px;
+                            }
                           .linkspace{
                                       line-height: 40px;
                           }
+                        }
                           .logo{
                                 .introPhoto{
                                             border: none;
@@ -96,9 +96,9 @@
                          }
                 .formbox{
                          padding-top: 20px;
-                         p,.details ul,.details .included,.payment .options{
-                                                                            padding-left: 0;
-                                                                            font-size: 22px;
+                         p,.details .included,.payment .options{
+                                                                padding-left: 0;
+                                                                font-size: 22px;
                                   }
                                   .details{
                                            padding: 0 0 0px 30px;
@@ -106,7 +106,8 @@
                                               width: 90%;
                                               }
                                               ul{
-                                                  padding-top: 30px;
+                                                  padding: 30px 5px 0 0;
+                                                  font-size: 18px;
                                               }
                                               .included{
                                                         top: 20px;
@@ -267,7 +268,7 @@
                                            .mtBold{
                                                    font-weight: bold;
                                                   }
-                                         }
+                                          }
                                .information{
                                             .button{
                                                     width: 60%;

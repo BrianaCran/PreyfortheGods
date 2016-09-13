@@ -747,14 +747,14 @@ button, .checkout button, .formbox .execute, .formbox .button {
       .content .button button {
         left: 13%; }
 
-  .presskit p, .presskit .linkspace {
-    font-size: 20px; }
   .presskit h2 {
     text-align: center; }
   .presskit ul {
     padding-left: 10%; }
-  .presskit .linkspace {
-    line-height: 40px; }
+    .presskit ul p, .presskit ul .linkspace {
+      font-size: 20px; }
+    .presskit ul .linkspace {
+      line-height: 40px; }
   .presskit .logo .introPhoto {
     border: none; }
   .presskit .notTablet {
@@ -768,7 +768,7 @@ button, .checkout button, .formbox .execute, .formbox .button {
       left: 0px; }
     .checkout .formbox {
       padding-top: 20px; }
-      .checkout .formbox p, .checkout .formbox .details ul, .checkout .formbox .details .included, .checkout .formbox .payment .options {
+      .checkout .formbox p, .checkout .formbox .details .included, .checkout .formbox .payment .options {
         padding-left: 0;
         font-size: 22px; }
       .checkout .formbox .details {
@@ -776,7 +776,8 @@ button, .checkout button, .formbox .execute, .formbox .button {
         .checkout .formbox .details img {
           width: 90%; }
         .checkout .formbox .details ul {
-          padding-top: 30px; }
+          padding: 30px 5px 0 0;
+          font-size: 18px; }
         .checkout .formbox .details .included {
           top: 20px; }
         .checkout .formbox .details .mtBold {

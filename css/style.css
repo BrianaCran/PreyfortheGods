@@ -378,6 +378,8 @@ textarea {
     display: inline-block;
     text-transform: uppercase;
     width: 19.79%; }
+  .nav .drop {
+    padding-bottom: 4px; }
   .nav .active {
     background: black; }
   .nav a, .nav .mobileN {
@@ -422,6 +424,8 @@ textarea {
   -webkit-border-image: url(../images/border.svg) 39 0 61 stretch;
   -o-border-image: url(../images/border.svg) 39 0 61 stretch;
   border-image: url(../images/border.svg) 39 0 61 fill stretch; }
+  .content a {
+    color: #7d0000; }
   .content h1 {
     background: #7d0000;
     color: #a5ceeb;
@@ -457,12 +461,10 @@ textarea {
   .content .button {
     padding-top: 20px; }
     .content .button h2 {
-      color: white;
+      color: #7d0000;
       text-align: center;
       padding-bottom: 20px; }
     .content .button button {
-      background: black;
-      color: #a5ceeb;
       font-size: 30px;
       padding: 5px 20px 5px 20px;
       position: relative;
@@ -495,6 +497,8 @@ textarea {
     font-size: 16px; }
 .presskit iframe {
   top: 20px; }
+.presskit .logo .introPhoto {
+  border: none; }
 .presskit .empty {
   padding: 35px; }
 
@@ -521,9 +525,7 @@ textarea {
   .checkout .formbox button, .checkout .formbox .button, .checkout .formbox .execute {
     border-radius: 10px;
     padding: 10px 20px 10px 20px;
-    font-size: 20px;
-    background: black;
-    color: #a5ceeb; }
+    font-size: 20px; }
   .checkout .formbox button:hover {
     color: white; }
   .checkout .formbox .fa {
@@ -689,6 +691,10 @@ button, .nav, .media a, .presskit .introphoto {
   border: none;
   outline: none; }
 
+button, .checkout button, .formbox .execute, .formbox .button {
+  background: black;
+  color: #a5ceeb; }
+
 @media (max-width: 767px) {
   body hr {
     display: block;
@@ -726,7 +732,7 @@ button, .nav, .media a, .presskit .introphoto {
       padding: 10px 0px 10px 0;
       text-indent: 0px;
       text-align: center; }
-    .content iframe, .content .intro, .content .introPhoto, .content p, .content .media img, .content .checkout .formbox {
+    .content iframe, .content .intro, .content .introPhoto, .content p, .content .media img, .content .formbox {
       left: 0px;
       width: 100%; }
     .content p {
@@ -741,14 +747,13 @@ button, .nav, .media a, .presskit .introphoto {
       .content .button button {
         left: 13%; }
 
+  .presskit p, .presskit .linkspace {
+    font-size: 20px; }
   .presskit h2 {
     text-align: center; }
   .presskit ul {
     padding-left: 10%; }
-    .presskit ul p {
-      font-size: 20px; }
   .presskit .linkspace {
-    font-size: 20px;
     line-height: 40px; }
   .presskit .logo .introPhoto {
     border: none; }
@@ -757,41 +762,44 @@ button, .nav, .media a, .presskit .introphoto {
 
   .checkout {
     padding-bottom: 50px; }
-    .checkout .thumbnail {
-      width: 25%;
-      margin-left: 5%; }
-    .checkout .formbox p, .checkout .formbox .details ul, .checkout .formbox .details .included, .checkout .formbox .payment .options {
-      padding-left: 0;
-      font-size: 22px; }
-    .checkout .formbox .details {
-      padding: 0 0 0px 30px; }
-      .checkout .formbox .details img {
+    .checkout .thumbnails {
+      width: 32%;
+      padding: 10px 0 0 5px;
+      left: 0px; }
+    .checkout .formbox {
+      padding-top: 20px; }
+      .checkout .formbox p, .checkout .formbox .details ul, .checkout .formbox .details .included, .checkout .formbox .payment .options {
+        padding-left: 0;
+        font-size: 22px; }
+      .checkout .formbox .details {
+        padding: 0 0 0px 30px; }
+        .checkout .formbox .details img {
+          width: 90%; }
+        .checkout .formbox .details ul {
+          padding-top: 30px; }
+        .checkout .formbox .details .included {
+          top: 20px; }
+        .checkout .formbox .details .mtBold {
+          font-weight: bold;
+          width: 100%; }
+      .checkout .formbox .information .button {
+        width: 60%; }
+      .checkout .formbox .information input[type='text'] {
         width: 90%; }
-      .checkout .formbox .details ul {
-        padding-top: 30px; }
-      .checkout .formbox .details .included {
+      .checkout .formbox .information input[type='checkbox'], .checkout .formbox .information .fa-gift {
+        left: .5%;
+        display: block;
         top: 20px; }
-      .checkout .formbox .details .mtBold {
-        font-weight: bold;
-        width: 100%; }
-    .checkout .formbox .information .button {
-      width: 60%; }
-    .checkout .formbox .information input[type='text'] {
-      width: 90%; }
-    .checkout .formbox .information input[type='checkbox'], .checkout .formbox .information .fa-gift {
-      left: .5%;
-      display: block;
-      top: 20px; }
-    .checkout .formbox .information .fa-gift {
-      top: 3px;
-      left: 20px; }
-    .checkout .formbox .payment {
-      padding: 20px 0 80px 20%; }
-      .checkout .formbox .payment .mobileV {
-        position: relative;
-        top: 10px; }
-      .checkout .formbox .payment .options {
-        padding: 40px 0 0 15px; }
+      .checkout .formbox .information .fa-gift {
+        top: 3px;
+        left: 20px; }
+      .checkout .formbox .payment {
+        padding: 20px 0 80px 20%; }
+        .checkout .formbox .payment .mobileV {
+          position: relative;
+          top: 10px; }
+        .checkout .formbox .payment .options {
+          padding: 40px 0 0 15px; }
 
   .footer .fa {
     padding: 5px 0 0 12%; }
@@ -856,9 +864,10 @@ button, .nav, .media a, .presskit .introphoto {
 
   .checkout {
     padding-bottom: 50px; }
-    .checkout .thumbnail {
-      width: 25%;
-      margin-left: 5%; }
+    .checkout .thumbnails {
+      width: 20%;
+      left: 0;
+      padding: 10px 0 0 5px; }
     .checkout .formbox p, .checkout .formbox .details .included, .checkout .formbox .payment .options {
       font-size: 22px; }
     .checkout .formbox .details, .checkout .formbox .information {

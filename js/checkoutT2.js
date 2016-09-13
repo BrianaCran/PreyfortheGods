@@ -1,5 +1,5 @@
 $(document).ready(function(){
-     $('.introphoto').hide();
+     $('.introPhoto').hide();
      $('.buyingA').show();
      $('#title').html("Backer Plus");
      $('.nextI').hide();

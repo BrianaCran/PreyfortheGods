@@ -1,5 +1,5 @@
 $(document).ready(function(){
-     $('.introphoto').hide();
+     $('.introPhoto').hide();
      $('.buyingD').show();
      $('#title').html("Explorer Edition");
      $('.additionalI').hide();

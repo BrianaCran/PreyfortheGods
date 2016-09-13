@@ -1,5 +1,5 @@
 $(document).ready(function(){
-     $('.introphoto').hide();
+     $('.introPhoto').hide();
      $('.buyingE').show();
      $('#title').html("Wolf Edition");
      $('.additionalI').hide();

@@ -4,6 +4,10 @@
          padding: 50px 0px 50px 0px;
          @include desktopBorder;
 
+         a{
+           color: $red;
+         }
+
          h1{
             background: $red;
             color: $blue;
@@ -52,13 +56,11 @@
    .button{
            padding-top: 20px;
            h2{
-              color: white;
+              color: $red;
               text-align: center;
               padding-bottom: 20px;
              }
            button{
-                  background: black;
-                  color: $blue;
                   font-size: 30px;
                   padding: 5px 20px 5px 20px;
                   position: relative;
@@ -105,6 +107,11 @@
           iframe{
                  top: 20px;
                 }
+          .logo{
+                .introPhoto{
+                            border: none;
+                }
+          }
           .empty{
                  padding: 35px;
           }
@@ -137,8 +144,6 @@
                                             border-radius: 10px;
                                             padding: 10px 20px 10px 20px;
                                             font-size: 20px;
-                                            background: black;
-                                            color: $blue;
                    }
                    button:hover{
                                 color: white;

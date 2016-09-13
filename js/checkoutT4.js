@@ -1,5 +1,5 @@
 $(document).ready(function(){
-     $('.introphoto').hide();
+     $('.introPhoto').hide();
      $('.buyingC').show();
      $('#title').html("Legion Edition");
      $('.additionalI').hide();

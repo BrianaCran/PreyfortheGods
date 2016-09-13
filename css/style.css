@@ -372,14 +372,18 @@ textarea {
   position: fixed; }
   .nav .noPadding {
     padding: 0; }
-  .nav button, .nav .drop {
+  .nav button, .nav .desktop {
     background: #7d0000;
     padding: 12px 0px 2px 2px;
     display: inline-block;
     text-transform: uppercase;
     width: 19.79%; }
-  .nav .drop {
+  .nav .desktop, .nav .drop {
     padding-bottom: 4px; }
+  .nav .drop {
+    display: none;
+    width: 100%;
+    border-top: 2px solid black; }
   .nav .active {
     background: black; }
   .nav a, .nav .mobileN {
@@ -713,10 +717,8 @@ button, .checkout button, .formbox .execute, .formbox .button {
     position: relative;
     top: 3px;
     left: 15px; }
-  .nav .drop {
-    display: none;
-    width: 100%;
-    border-top: 2px solid black; }
+  .nav .desktop {
+    display: none; }
 
   .header {
     margin-top: 58px; }
@@ -818,8 +820,8 @@ button, .checkout button, .formbox .execute, .formbox .button {
   .nav button {
     padding: 7px 0 7px 0;
     border: 0; }
-  .nav .drop {
-    width: 19.5%;
+  .nav .desktop {
+    width: 19.61%;
     padding-bottom: 7px; }
 
   .content {

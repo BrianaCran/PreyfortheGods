@@ -561,7 +561,7 @@ textarea {
       padding: 5px; }
     .checkout .formbox .information input[type='checkbox'], .checkout .formbox .information .fa-gift {
       position: relative;
-      left: 24.5%; }
+      left: 20%; }
     .checkout .formbox .information .button, .checkout .formbox .information .execute {
       padding-left: 15px;
       text-align: center;

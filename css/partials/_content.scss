@@ -81,7 +81,7 @@
 .presskit{
           .subH,.hborder{
                           background: none;
-                          color: white;
+                          color: $red;
                   }
           .hborder{
                    padding: 8px;
@@ -102,6 +102,7 @@
              p{
                width: 100%;
                font-size: 16px;
+               padding: 0;
              }
           }
           iframe{

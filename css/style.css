@@ -483,7 +483,7 @@ textarea {
 
 .presskit .subH, .presskit .hborder {
   background: none;
-  color: white; }
+  color: #7d0000; }
 .presskit .hborder {
   padding: 8px; }
 .presskit h2 {
@@ -498,7 +498,8 @@ textarea {
     font-size: 20px; }
   .presskit ul p {
     width: 100%;
-    font-size: 16px; }
+    font-size: 16px;
+    padding: 0; }
 .presskit iframe {
   top: 20px; }
 .presskit .logo .introPhoto {

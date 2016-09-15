@@ -53,6 +53,6 @@ $().ready(function() {
 		$(window).scroll(function(){
 			$move
 				.stop()
-				.animate({"marginTop": ($(window).scrollTop() + 5) + "px"}, "slow" );
+				.animate({"marginTop": ($(window).scrollTop() + 10) + "px"}, 150 );
 		});
 	});

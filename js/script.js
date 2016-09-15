@@ -10,3 +10,15 @@ $(document).ready(function(){
       }
   });
 });
+$(document).ready(function(){
+  $('.tiers').click(function() {
+      if ($('.tiers').hasClass("clicked-once")) {
+  			$('.tierExplanation').hide();
+  			$('.tiers').removeClass("clicked-once");
+      }
+      else {
+  			$('.tiers').addClass("clicked-once");
+        $('.tierExplanation').show();
+      }
+  });
+});
